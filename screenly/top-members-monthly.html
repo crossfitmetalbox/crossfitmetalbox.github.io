@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top booking members</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background-color: #363636;
+        /* background: linear-gradient(#dddddd, #ffffff); */
+        font-family: "Oswald", sans-serif;
+      }
+
+      .hero {
+        color: gold;
+        font-weight: bold;
+        text-align: center;
+        width: 100vw;
+      }
+
+      .hero .title {
+        font-size: 84px;
+      }
+
+      .hero .subtitle {
+        font-size: 36px;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      /* li.logo img {
+        display: inline-block;
+      } */
+
+      .list-section {
+        color: #363636;
+        margin: 20px;
+        min-height: 200px;
+      }
+
+      .list-section div {
+        background-color: slategray;
+        color: #363636;
+        min-height: 200px;
+        padding: 20px;
+        margin: auto 0;
+      }
+
+      .list-section div.logo {
+        background-color: #363636 !important;
+        /* display: block; */
+        display: none;
+        margin: auto 0;
+        margin-bottom: -25px;
+        max-height: 30px;
+        text-align: center;
+      }
+
+      .list-section div.title {
+        background-color: transparent;
+        border-radius: 20px 0 0 20px;
+        font-size: 90px;
+        padding-top: 0;
+      }
+
+      .list-section div.members {
+        border-radius: 0 20px 20px 0;
+      }
+
+      .list-section div.title {
+        color: slategray;
+      }
+
+      .list-section:nth-child(1) div.title {
+        color: gold;
+      }
+      .list-section:nth-child(1) div.members {
+        background-color: gold;
+        font-size: 60px;
+      }
+
+      .list-section:nth-child(2) div.title {
+        color: silver;
+      }
+
+      .list-section:nth-child(2) div.members {
+        background-color: silver;
+        font-size: 48px;
+      }
+
+      .list-section:nth-child(3) div.title {
+        color: goldenrod;
+      }
+      .list-section:nth-child(3) div.members {
+        background-color: goldenrod;
+      }
+
+      .list-section .title {
+        font-size: 60px;
+        height: 100%;
+        margin: auto 0;
+        margin-right: 5px;
+        min-height: 200px;
+        padding-right: 20px;
+        width: 120px;
+      }
+
+      .list-section .members {
+        font-size: 36px;
+        padding-left: 20px;
+        width: calc(100vw - 280px);
+        min-width: 800px;
+      }
+
+      .list-section .members li {
+        margin-bottom: 10px;
+      }
+
+      .list-section > div {
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      .footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <div class="title">Bokningstoppen</div>
+      <div class="subtitle">maj 2023</div>
+    </div>
+    <ul class="top-list">
+      <li class="list-section">
+        <div class="logo">
+          <img src="./images/cfmb-small-logo.png" alt="" />
+          <img src="./images/cfmb-small-logo.png" alt="" />
+          <img src="./images/cfmb-small-logo.png" alt="" />
+        </div>
+        <div class="title">13</div>
+        <div class="members">
+          <ul>
+            <li>Therése</li>
+          </ul>
+        </div>
+      </li>
+      <li class="list-section">
+        <div class="logo">
+          <img src="./images/cfmb-small-logo.png" alt="" />
+          <img src="./images/cfmb-small-logo.png" alt="" />
+        </div>
+        <div class="title">12<br /><br /></div>
+        <div class="members">
+          <ul>
+            <li>Laura</li>
+          </ul>
+        </div>
+      </li>
+      <li class="list-section">
+        <div class="logo">
+          <img src="./images/cfmb-small-logo.png" alt="" />
+        </div>
+        <div class="title">9</div>
+        <div class="members">
+          <ul>
+            <li>Peter</li>
+            <li>Jennifer</li>
+          </ul>
+        </div>
+      </li>
+      <li class="list-section">
+        <div class="logo">
+          <img src="./images/cfmb-small-logo.png" alt="" />
+        </div>
+        <div class="title">8</div>
+        <div class="members">
+          <ul>
+            <li>Christer</li>
+            <li>Caroline</li>
+            <li>Ida</li>
+            <li>Hanna</li>
+          </ul>
+        </div>
+      </li>
+      <li class="list-section">
+        <div class="logo">
+          <img src="./images/cfmb-small-logo.png" alt="" />
+        </div>
+        <div class="title">7</div>
+        <div class="members">
+          <ul>
+            <li>Ann-Sofie</li>
+            <li>Annelie</li>
+          </ul>
+        </div>
+      </li>
+      <li class="list-section">
+        <div class="logo">
+          <img src="./images/cfmb-small-logo.png" alt="" />
+        </div>
+        <div class="title">6</div>
+        <div class="members">
+          <ul>
+            <li>Viktoria</li>
+            <li>Ely</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </body>
+</html>
