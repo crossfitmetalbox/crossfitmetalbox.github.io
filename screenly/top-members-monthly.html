@@ -11,7 +11,7 @@
 
     <style>
       body {
-        background-color: #363636;
+        background-color: #242424;
         /* background: linear-gradient(#dddddd, #ffffff); */
         font-family: "Oswald", sans-serif;
       }
@@ -36,154 +36,120 @@
         padding: 0;
       }
 
-      /* li.logo img {
-        display: inline-block;
-      } */
-
       .list-section {
-        color: #363636;
-        margin: 20px;
-        min-height: 200px;
+        margin-top: 50px;
+        /* border-top: goldenrod 2px solid; */
       }
 
-      .list-section div {
-        background-color: slategray;
-        color: #363636;
-        min-height: 200px;
-        padding: 20px;
-        margin: auto 0;
-      }
-
-      .list-section div.logo {
-        background-color: #363636 !important;
-        /* display: block; */
-        display: none;
-        margin: auto 0;
-        margin-bottom: -25px;
-        max-height: 30px;
+      .list-section div.title {
+        font-size: 90px;
+        padding-top: 0;
         text-align: center;
       }
 
-      .list-section div.title {
-        background-color: transparent;
-        border-radius: 20px 0 0 20px;
-        font-size: 90px;
-        padding-top: 0;
-      }
-
+      .list-section div.title,
       .list-section div.members {
-        border-radius: 0 20px 20px 0;
-      }
-
-      .list-section div.title {
         color: slategray;
       }
 
-      .list-section:nth-child(1) div.title {
-        color: gold;
-      }
+      .list-section:nth-child(1) div.title,
       .list-section:nth-child(1) div.members {
-        background-color: gold;
-        font-size: 60px;
+        color: gold;
+        font-size: 72px;
       }
 
-      .list-section:nth-child(2) div.title {
-        color: silver;
-      }
-
+      .list-section:nth-child(2) div.title,
       .list-section:nth-child(2) div.members {
-        background-color: silver;
-        font-size: 48px;
+        color: silver;
+        font-size: 66px;
+      }
+ 
+      .list-section:nth-child(3) div.title,      
+      .list-section:nth-child(3) div.members {
+        color: goldenrod;
+      } 
+
+      div.members ul {
+        text-align: center;
       }
 
-      .list-section:nth-child(3) div.title {
-        color: goldenrod;
+      div.members ul.col-one li {
+        text-align: center;
+        width: 100%
       }
-      .list-section:nth-child(3) div.members {
-        background-color: goldenrod;
+
+      div.members ul.col-two {
+        margin: 0 auto;
+      }
+      
+      div.members ul.col-two li {
+        display: inline-block;
+        text-align: center;
+        width: 350px;
       }
 
       .list-section .title {
         font-size: 60px;
-        height: 100%;
-        margin: auto 0;
-        margin-right: 5px;
-        min-height: 200px;
-        padding-right: 20px;
-        width: 120px;
+        margin-top: -20px;
       }
 
       .list-section .members {
-        font-size: 36px;
-        padding-left: 20px;
-        width: calc(100vw - 280px);
-        min-width: 800px;
+        font-size: 48px;
       }
 
       .list-section .members li {
         margin-bottom: 10px;
       }
 
-      .list-section > div {
-        display: inline-block;
-        vertical-align: top;
+      .crown {
+        text-align: center;
+        width: 100vw;
       }
 
-      .footer {
-        text-align: center;
+      .crown > img {
+        margin-left: -15px;
+        width: 100px;
       }
     </style>
   </head>
   <body>
     <div class="hero">
-      <div class="title">Bokningstoppen</div>
-      <div class="subtitle">maj 2023</div>
+      <div class="title">MAJ</div>
+      <div class="subtitle">2023</div>
     </div>
     <ul class="top-list">
       <li class="list-section">
-        <div class="logo">
-          <img src="./images/cfmb-small-logo.png" alt="" />
-          <img src="./images/cfmb-small-logo.png" alt="" />
-          <img src="./images/cfmb-small-logo.png" alt="" />
+        <div class="crown">
+          <img src="./images/crown.png" />
         </div>
         <div class="title">13</div>
         <div class="members">
-          <ul>
+          <ul class="col-one">
             <li>Therése</li>
           </ul>
         </div>
       </li>
       <li class="list-section">
-        <div class="logo">
-          <img src="./images/cfmb-small-logo.png" alt="" />
-          <img src="./images/cfmb-small-logo.png" alt="" />
-        </div>
-        <div class="title">12<br /><br /></div>
+        <div class="title">12</div>
         <div class="members">
-          <ul>
+          <ul class="col-one">
             <li>Laura</li>
           </ul>
         </div>
       </li>
       <li class="list-section">
-        <div class="logo">
-          <img src="./images/cfmb-small-logo.png" alt="" />
-        </div>
         <div class="title">9</div>
         <div class="members">
-          <ul>
+          <ul class="col-one">
             <li>Peter</li>
             <li>Jennifer</li>
           </ul>
         </div>
       </li>
       <li class="list-section">
-        <div class="logo">
-          <img src="./images/cfmb-small-logo.png" alt="" />
-        </div>
         <div class="title">8</div>
         <div class="members">
-          <ul>
+          <ul class="col-two">
             <li>Christer</li>
             <li>Caroline</li>
             <li>Ida</li>
@@ -192,24 +158,18 @@
         </div>
       </li>
       <li class="list-section">
-        <div class="logo">
-          <img src="./images/cfmb-small-logo.png" alt="" />
-        </div>
         <div class="title">7</div>
         <div class="members">
-          <ul>
+          <ul class="col-two">
             <li>Ann-Sofie</li>
             <li>Annelie</li>
           </ul>
         </div>
       </li>
       <li class="list-section">
-        <div class="logo">
-          <img src="./images/cfmb-small-logo.png" alt="" />
-        </div>
         <div class="title">6</div>
         <div class="members">
-          <ul>
+          <ul class="col-two">
             <li>Viktoria</li>
             <li>Ely</li>
           </ul>
