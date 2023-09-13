@@ -38,7 +38,7 @@ function initializeClock(id) {
   var timeinterval = setInterval(updateClock, 1000);
 }
 
-function initializeCountdown(id, endtime) {
+function initializeCountdown(id, endtime, config) {
   var clock = document.getElementById(id);
   var daysSpan = clock.querySelector('.days');
   var hoursSpan = clock.querySelector('.hours');
@@ -48,7 +48,11 @@ function initializeCountdown(id, endtime) {
   function updateClock() {
     var t = getTimeRemaining(endtime);
 
-    daysSpan.innerHTML = t.days;
+    if (config.hideDaysOnZero && t.days === 0) {
+      daysSpan.remove();
+    } else {
+      daysSpan.innerHTML = config.emptyDaysOnZero && t.days==0 ? '': t.days;
+    }
     hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
     minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
     secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
