@@ -1,0 +1,150 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Julgrisen 2023</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./style/reset.min.css">
+  <style>
+    body {
+      background-color: #f2d1f0;
+      background: linear-gradient(#f9c0f4, #f2d1f0);
+      font-family: "Oswald", sans-serif;
+    }
+
+    .hero {
+      margin-top: 10em;
+      text-align: center;
+      width: 100%;
+    }
+
+    .hero img {
+      margin: 10em auto;
+      width: 200px;
+    }
+
+    .hero .text {
+      font-size: 4em;
+    }
+
+    .hero .big {
+      font-size: 2em;
+    }
+
+    .info {
+      color: #000000;
+      font-size: 4em;
+      text-align: center;
+    }
+
+    .info .text {
+      font-size: 1.4em;
+      margin: 2em 0;
+    }
+
+    .clock>div {
+      color: #b20000;
+      display: inline-block;
+      font-size: 3em;
+      margin-bottom: 1em;
+    }
+
+    ul {
+      margin: 100px auto;
+    }
+
+    li {
+      margin: 50px auto;
+    }
+
+    .heat-heading {
+      color: #b20000;
+      font-size: 0.75em;
+    }
+  </style>
+
+  <script type="text/javascript" src="script/countdown.min.js"></script>
+</head>
+
+<body>
+  <div class="hero">
+    <div class="text">
+      Nu är det äntligen dags för<br />
+      <div class="big">
+        Julgrisen 2023
+      </div>
+    </div>
+    <img src="./images/logo.png" alt="Julgrisen" />
+  </div>
+  <div class="info">
+    <div class="text">
+      10 december<br />
+      12:00 - ca 14:00
+    </div>
+    <div class="clock-container">
+      <div id="clockdiv" class="clock">
+        <div class="time hours"></div>
+        <div class="time">:</div>
+        <div class="time minutes"></div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      console.log(new Date(Date.now()));
+      initializeClock("clockdiv");
+    </script>
+  </div>
+
+  <script>
+    var getJSON = function (url, callback) {
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", url, true);
+      xhr.responseType = "json";
+      xhr.onload = function () {
+        var status = xhr.status;
+        if (status === 200) {
+          callback(null, xhr.response);
+        } else {
+          callback(status, xhr.response);
+        }
+      };
+      xhr.send();
+    };
+
+    var key = "total";
+    var sortByTotal = function (a, b) {
+      return a[key] - b[key];
+    };
+
+    var schemaContainer = document.getElementById("schema");
+    try {
+      var createLine = function (data) {
+        var li = document.createElement("li");
+        li.className = "entry";
+        var line = '<div class="title">' + data["title"] + "</div>";
+        line += '<div class="subtitle">' + data["subtitle"] + "</div>";
+        line += '<div class="date">' + data["date"] + "</div>";
+        li.innerHTML = line;
+        schemaContainer.appendChild(li);
+      };
+
+      getJSON("upcoming.json", function (error, data) {
+        if (error) {
+          schemaContainer.innerHTML =
+            '<div class="error">' + error + " -- " + (data || "") + "</div>";
+        } else {
+          for (var i = 0; i < data.length; i++) {
+            createLine(data[i]);
+          }
+        }
+      });
+    } catch (ex) {
+      schemaContainer.innerText = ex;
+    }
+  </script>
+</body>
+
+</html>
