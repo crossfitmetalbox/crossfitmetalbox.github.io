@@ -1,0 +1,95 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Julgrisen 2023</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./style/reset.min.css">
+  <style>
+    body {
+      /* background-color: #f2d1f0; */
+      /* background: linear-gradient(#f9c0f4, #f2d1f0); */
+      font-family: "Oswald", sans-serif;
+    }
+
+    .hero {
+      text-align: center;
+      width: 100%;
+    }
+
+    .hero img {
+      margin: 50px auto;
+      width: 500px;
+    }
+
+    .info {
+      color: #000000;
+      font-size: 5em;
+      text-align: center;
+    }
+
+    .clock>div {
+      color: #b20000;
+      display: inline-block;
+      font-size: 3em;
+    }
+
+    ul {
+      font-size: 1.2em;;
+      margin: 100px auto;
+    }
+
+    li {
+      margin: 100px auto;
+    }
+
+    .heat-heading {
+      color: #b20000;
+      margin-bottom: 40px;
+      /* font-size: 0.75em; */
+    }
+  </style>
+
+  <script type="text/javascript" src="script/countdown.min.js"></script>
+</head>
+
+<body>
+  <!-- <div class="bg-icon"><img src="./calendar_angle.svg" alt="" /></div> -->
+  <div class="hero">
+    <img src="./images/logo-with-text-round_500x500.png" alt="Julgrisen" />
+  </div>
+  <div class="info">
+    <ul>
+      <li>
+        <div class="heat-heading">Heat 1 - 12:50</div>
+        <div>Aylin - Maria - Mattias</div>
+      </li>
+      <li>
+        <div class="heat-heading">Heat 2 - 13:15</div>
+        <div>Gabrijela - Therése - Martin</div>
+      </li>
+      <li>
+        <div class="heat-heading">Heat 3 - 13:40</div>
+        <div>Laura - Erik - Simon</div>
+      </li>
+    </ul>
+    <div class="clock-container">
+      <div id="clockdiv" class="clock">
+        <div class="time hours"></div>
+        <div class="time">:</div>
+        <div class="time minutes"></div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      console.log(new Date(Date.now()));
+      initializeClock("clockdiv");
+    </script>
+  </div>
+
+</body>
+
+</html>
