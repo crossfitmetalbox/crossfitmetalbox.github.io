@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BTWB</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background-color: #dddddd;
+        /* background: linear-gradient(#dddddd, #ffffff); */
+        font-family: "Oswald", sans-serif;
+      }
+
+      div.btwb_webwidget {
+        background-color: transparent;
+        background: linear-gradient(#f7a18e, #dddddd);
+        margin: 0;
+        padding: 30px 10px;
+      }
+
+      h5 {
+        border-bottom: 2px solid #df340e;
+        color: #df340e;
+        font-size: 30px;
+        text-transform: uppercase;
+      }
+      h5:before {
+        border-bottom: 2px solid #df340e;
+        color: #df340e;
+        font-size: 30px;
+        text-transform: uppercase;
+        padding-right: 10px;
+      }
+
+      .btwb-wod-list li:nth-child(1) h5:before {
+        content: 'A: ';
+      }
+      .btwb-wod-list li:nth-child(2) h5:before {
+        content: 'B: ';
+      }
+      .btwb-wod-list li:nth-child(3) h5:before {
+        content: 'C: ';
+      }
+      .btwb-wod-list li:nth-child(4) h5:before {
+        content: 'D: ';
+      }
+      .btwb-wod-list li:nth-child(5) h5:before {
+        content: 'E: ';
+      }
+      .btwb-wod-list li:nth-child(6) h5:before {
+        content: 'F: ';
+      }
+
+      .btwb-wod-links {
+        display: none;
+      }
+
+      .btwb-leaderboard,
+      .btwb-recent-results {
+        display: none;
+      }
+
+      /* .btwb-result-list {
+        display: inline-block;
+      } */
+      
+      .btwb-result-container {
+        display: none;
+      }
+
+      h6 {
+        color: #212121;
+        display: none;
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        margin-top: 10px;
+      }
+
+      div.head {
+        background-color: #f7a18e;
+        border-bottom: 5px solid #ffa997; /*#df340e;*/
+        height: 100px;
+        position: relative;
+        width: 100vw;
+      }
+
+      div.head > div {
+        height: 100px;
+        position: absolute;
+        top: 0;
+      }
+
+      div.title {
+        color: #212121;
+        font-size: 80px;
+        font-weight: bold;
+        left: 200px;
+        text-transform: uppercase;
+      }
+
+      div.title .highlight {
+        color: #efefef;
+        font-size: 80px;
+        font-weight: bold;
+        left: 280px;
+        text-transform: uppercase;
+      }
+
+      ul.btwb-wod-list {
+        /* WOD Track */
+        background-color: transparent;
+        margin-bottom: 20px;
+      }
+      ul.btwb-wod-list li {
+        /* WOD Parts */
+        background-color: transparent;
+      }
+      ul.btwb-wod-list li hr {
+        display: none;
+      }
+
+      /* Additional info */
+      ul.btwb-wod-list li p i {
+        color: #212121;
+        font-size: 18px;
+        font-style: italic;
+      }
+
+      ul.btwb-wod-list li small {
+        color: #434343;
+        font-size: 10px;
+        font-style: italic;
+      }
+
+      ul.btwb-wod-list li small {
+        display: none;
+      }
+
+      .btwb-workout-description {
+        font-size: 24px;
+        padding-left: 10px;
+      }
+    </style>
+  </head>
+  <body style="padding: 0; margin: 0;">
+    <div class="head">
+      <!-- <div class="icon"><img src="images/btwb-logo.png" height="100px" alt="BTWB" /></div> -->
+      <div class="title"><span class="highlight">WORKOUT</span> OF THE DAY</div>
+    </div>
+    <div
+      class="btwb_webwidget"
+      data-type="wods"
+      data-sections="main"
+      data-track_ids="246214"
+      <!-- data-track_ids="246214,593764" -->
+      data-activity_length="0"
+      data-leaderboard_length="0"
+      data-days="0"
+    ></div>
+    <script
+      id="btwb_config"
+      data-api_key="4470cfe42f976d1289487c92687fad10"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://static.btwb.com/libs/webwidgets/2/webwidgets.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://static.btwb.com/libs/webwidgets/2/webwidgets.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
+  </body>
+</html>
