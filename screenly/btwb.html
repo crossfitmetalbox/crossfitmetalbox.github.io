@@ -153,15 +153,17 @@
       <!-- <div class="icon"><img src="images/btwb-logo.png" height="100px" alt="BTWB" /></div> -->
       <div class="title"><span class="highlight">WORKOUT</span> OF THE DAY</div>
     </div>
+    <div id="btwb-container" class="btwb-container"></div>
     <div
       class="btwb_webwidget"
+      data-date="2024-01-08"
       data-type="wods"
       data-sections="main"
       data-track_ids="246214"
       <!-- data-track_ids="246214,593764" -->
       data-activity_length="0"
       data-leaderboard_length="0"
-      data-days="0"
+      data-days="1"
     ></div>
     <script
       id="btwb_config"
@@ -179,5 +181,14 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
     />
+
+    <!-- <script>
+      var dateString = (new Date).toLocaleDateString('sv-SE');
+      console.log(dateString);
+
+      var container = document.querySelector("#btwb-container");
+      container.setAttribute("data-date", dateString);
+    </script> -->
+
   </body>
 </html>
