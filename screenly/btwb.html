@@ -24,36 +24,41 @@
       }
 
       h5 {
-        border-bottom: 2px solid #df340e;
         color: #df340e;
         font-size: 30px;
         text-transform: uppercase;
       }
       h5:before {
-        border-bottom: 2px solid #df340e;
+        border: 5px solid #df340e;
         color: #df340e;
-        font-size: 30px;
+        font-size: 40px;
         text-transform: uppercase;
-        padding-right: 10px;
+        padding: 5px 10px;
+        margin-right: 20px;
+      }
+
+      li > div {
+        color: #434343;
+        margin: 40px 0;
       }
 
       .btwb-wod-list li:nth-child(1) h5:before {
-        content: 'A: ';
+        content: 'A';
       }
       .btwb-wod-list li:nth-child(2) h5:before {
-        content: 'B: ';
+        content: 'B';
       }
       .btwb-wod-list li:nth-child(3) h5:before {
-        content: 'C: ';
+        content: 'C';
       }
       .btwb-wod-list li:nth-child(4) h5:before {
-        content: 'D: ';
+        content: 'D';
       }
       .btwb-wod-list li:nth-child(5) h5:before {
-        content: 'E: ';
+        content: 'E';
       }
       .btwb-wod-list li:nth-child(6) h5:before {
-        content: 'F: ';
+        content: 'F';
       }
 
       .btwb-wod-links {
@@ -64,10 +69,6 @@
       .btwb-recent-results {
         display: none;
       }
-
-      /* .btwb-result-list {
-        display: inline-block;
-      } */
       
       .btwb-result-container {
         display: none;
@@ -143,8 +144,8 @@
       }
 
       .btwb-workout-description {
-        font-size: 24px;
-        padding-left: 10px;
+        font-size: 30px;
+        padding-left: 20px;
       }
     </style>
   </head>
@@ -154,17 +155,25 @@
       <div class="title"><span class="highlight">WORKOUT</span> OF THE DAY</div>
     </div>
     <div id="btwb-container" class="btwb-container"></div>
-    <div
-      class="btwb_webwidget"
-      data-date="2024-01-08"
-      data-type="wods"
-      data-sections="main"
-      data-track_ids="246214"
-      <!-- data-track_ids="246214,593764" -->
-      data-activity_length="0"
-      data-leaderboard_length="0"
-      data-days="1"
-    ></div>
+    <script>
+      var dateString = (new Date).toLocaleDateString('sv-SE');
+      console.log(dateString);
+
+      var container = document.querySelector("#btwb-container");
+
+      var widget = document.createElement("div");
+      widget.className = "btwb_webwidget";
+      widget.setAttribute("data-date", dateString);
+      widget.setAttribute("data-type", "wods");
+      widget.setAttribute("data-sections", "main");
+      widget.setAttribute("data-track_ids", "246214");
+      widget.setAttribute("data-activity_length", "0");
+      widget.setAttribute("data-leaderboard_length", "0");
+      widget.setAttribute("data-days", "1");
+
+      container.appendChild(widget);
+    </script>
+
     <script
       id="btwb_config"
       data-api_key="4470cfe42f976d1289487c92687fad10"
@@ -182,13 +191,6 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
     />
 
-    <!-- <script>
-      var dateString = (new Date).toLocaleDateString('sv-SE');
-      console.log(dateString);
-
-      var container = document.querySelector("#btwb-container");
-      container.setAttribute("data-date", dateString);
-    </script> -->
 
   </body>
 </html>
