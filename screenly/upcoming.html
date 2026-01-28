@@ -1,0 +1,116 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CFMB Schema</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background-color: #275780;
+        background: linear-gradient(#275780, #3d84b8);
+        font-family: "Oswald", sans-serif;
+      }
+
+      .bg-icon {
+        left: -40px;
+        position: absolute;
+        top: -20px;
+        width: 800px;
+        z-index: -1;
+      }
+
+      ul {
+        list-style-type: none;
+        margin-top: 30px;
+        padding: 10px;
+      }
+
+      li {
+        color: #eeeeee;
+        padding-bottom: 50px;
+        text-align: center;
+      }
+
+      li .title {
+        font-size: 5em;
+        font-weight: bold;
+      }
+      li .subtitle {
+        font-size: 3.5em;
+        margin-top: -0.5em;
+        font-style: italic;
+      }
+      li .date {
+        font-size: 3.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg-icon"><img src="./calendar_angle.svg" alt="" /></div>
+    <div class="table">
+      <ul id="schema"></ul>
+    </div>
+
+    <script>
+      var getJSON = function (url, callback) {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", url, true);
+        xhr.responseType = "json";
+        xhr.onload = function () {
+          var status = xhr.status;
+          if (status === 200) {
+            callback(null, xhr.response);
+          } else {
+            callback(status, xhr.response);
+          }
+        };
+        xhr.send();
+      };
+
+      var key = "total";
+      var sortByTotal = function (a, b) {
+        return a[key] - b[key];
+      };
+
+      var schemaContainer = document.getElementById("schema");
+      try {
+        var createLine = function (data) {
+          var li = document.createElement("li");
+          li.className = "entry";
+          var line = '<div class="title">' + data["title"] + "</div>";
+          line += '<div class="subtitle">' + data["subtitle"] + "</div>";
+          line += '<div class="date">' + data["date"] + "</div>";
+          li.innerHTML = line;
+          schemaContainer.appendChild(li);
+        };
+
+        var handleError = function (error, data) {
+          schemaContainer.innerHTML =
+            '<div class="error">' + error + " -- " + (data || "") + "</div>";
+        };
+
+        getJSON("upcoming.json", function (error, data) {
+          if (error) {
+            handleError(error, data);
+          } else {
+            try {
+              for (var i = 0; i < data.length; i++) {
+                createLine(data[i]);
+              }
+            } catch (error) {
+              handleError(error, data);
+            }
+          }
+        });
+      } catch (ex) {
+        schemaContainer.innerText = ex;
+      }
+    </script>
+  </body>
+</html>
