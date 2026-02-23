@@ -1,8 +1,8 @@
 [
     {
         "title": "Open 26.1",
-        "subtitle": "första veckan",
-        "date": "26 feb - 1 mar"
+        "subtitle": "15:00 - 17:00",
+        "date": "1 mar"
     },
     {
         "title": "Test veckor",
@@ -11,12 +11,12 @@
     },
     {
         "title": "Open 26.2",
-        "subtitle": "andra veckan",
-        "date": "5 mar - 8 mar"
+        "subtitle": "15:00 - 17:00",
+        "date": "8 mar"
     },
     {
         "title": "Open 26.3",
-        "subtitle": "tredje veckan",
-        "date": "12 mar - 15 mar"
+        "subtitle": "15:00 - 17:00",
+        "date": "15 mar"
     }
 ]
