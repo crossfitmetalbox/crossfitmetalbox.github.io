@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Screen Size Check</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      font-family: monospace;
+      background: #111;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .info {
+      text-align: center;
+      font-size: 3rem;
+      line-height: 1.8;
+    }
+    .status {
+      margin-top: 1rem;
+      font-size: 4rem;
+      font-weight: bold;
+    }
+    .ok { color: #4caf50; }
+    .warn { color: #ff9800; }
+    .border {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      border: 6px dashed #444;
+      pointer-events: none;
+    }
+    .corner {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      border-color: #888;
+      border-style: solid;
+    }
+    .corner.tl { top: 0; left: 0; border-width: 6px 0 0 6px; }
+    .corner.tr { top: 0; right: 0; border-width: 6px 6px 0 0; }
+    .corner.bl { bottom: 0; left: 0; border-width: 0 0 6px 6px; }
+    .corner.br { bottom: 0; right: 0; border-width: 0 6px 6px 0; }
+  </style>
+</head>
+<body>
+  <div class="border"></div>
+  <div class="corner tl"></div>
+  <div class="corner tr"></div>
+  <div class="corner bl"></div>
+  <div class="corner br"></div>
+
+  <div class="info">
+    <div>Expected: <strong>1080 × 1920</strong></div>
+    <div>Actual: <strong id="actual"></strong></div>
+    <div>Device Pixel Ratio: <strong id="dpr"></strong></div>
+    <div class="status" id="status"></div>
+  </div>
+
+  <script>
+    function check() {
+      var w = window.innerWidth;
+      var h = window.innerHeight;
+      var dpr = window.devicePixelRatio || 1;
+      document.getElementById('actual').textContent = w + ' \u00d7 ' + h;
+      document.getElementById('dpr').textContent = dpr;
+      var el = document.getElementById('status');
+      if (w === 1080 && h === 1920) {
+        el.textContent = 'OK';
+        el.className = 'status ok';
+      } else {
+        el.textContent = 'MISMATCH';
+        el.className = 'status warn';
+      }
+    }
+    check();
+    window.addEventListener('resize', check);
+  </script>
+</body>
+</html>
