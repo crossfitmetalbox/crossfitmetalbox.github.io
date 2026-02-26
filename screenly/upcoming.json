@@ -2,21 +2,36 @@
     {
         "title": "Open 26.1",
         "subtitle": "15:00 - 17:00",
-        "date": "1 mar"
+        "date": "1 mar",
+        "displayStart": "2026-02-01",
+        "displayEnd": "2026-03-01"
     },
     {
-        "title": "Test veckor",
-        "subtitle": "deadlift, back squat, OLY, ...",
-        "date": "2 mar - 15 mar"
+        "title": "Testvecka",
+        "subtitle": "deadlift, Annie, clean & jerk, row, thrusters",
+        "date": "2 mar - 7 mar",
+        "displayStart": "2026-02-20",
+        "displayEnd": "2026-03-07"
     },
     {
         "title": "Open 26.2",
         "subtitle": "15:00 - 17:00",
-        "date": "8 mar"
+        "date": "8 mar",
+        "displayStart": "2026-02-20",
+        "displayEnd": "2026-03-08"
+    },
+    {
+        "title": "Testvecka",
+        "subtitle": "back squat, pull-ups, snatch, splits squats, bench press",
+        "date": "9 mar - 14 mar",
+        "displayStart": "2026-02-20",
+        "displayEnd": "2026-03-14"
     },
     {
         "title": "Open 26.3",
         "subtitle": "15:00 - 17:00",
-        "date": "15 mar"
+        "date": "15 mar",
+        "displayStart": "2026-02-20",
+        "displayEnd": "2026-03-15"
     }
 ]

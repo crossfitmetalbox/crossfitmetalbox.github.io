@@ -1,61 +1,243 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>CFMB Schema</title>
+    <title>CFMB Upcoming</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Oswald&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Bebas+Neue&display=swap"
       rel="stylesheet"
     />
 
     <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --bg-dark: #0e0e0e;
+        --bg-card: #161616;
+        --accent: #f16521;
+        --accent-secondary: #fec10d;
+        --accent-red: #ed1c24;
+        --accent-glow: rgba(241, 101, 33, 0.3);
+        --text-primary: #f1f1f1;
+        --text-muted: #8a8a8a;
+        --steel: #2a2d30;
+        --steel-light: #3e4247;
+      }
+
+      html, body {
+        height: 100%;
+        overflow: hidden;
+      }
+
       body {
-        background-color: #275780;
-        background: linear-gradient(#275780, #3d84b8);
+        background: var(--bg-dark);
         font-family: "Oswald", sans-serif;
+        color: var(--text-primary);
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
       }
 
-      .bg-icon {
-        left: -40px;
+      /* --- Noise texture overlay --- */
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+        pointer-events: none;
+        z-index: 100;
+      }
+
+      /* --- Diagonal accent stripe --- */
+      body::after {
+        content: "";
+        position: fixed;
+        top: -50%;
+        right: -5%;
+        width: 8px;
+        height: 200%;
+        background: linear-gradient(to bottom, var(--accent-secondary), var(--accent), var(--accent-red));
+        transform: rotate(12deg);
+        opacity: 0.45;
+        z-index: 0;
+      }
+
+      /* --- Header --- */
+      .header {
+        padding: 48px 60px 24px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .header-label {
+        font-family: "Oswald", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 4px;
+      }
+
+      .header-title {
+        font-family: "Bebas Neue", "Oswald", sans-serif;
+        font-size: 72px;
+        line-height: 0.95;
+        letter-spacing: 2px;
+        color: var(--text-primary);
+      }
+
+      .header-line {
+        width: 80px;
+        height: 4px;
+        background: var(--accent);
+        margin-top: 16px;
+      }
+
+      /* --- Events container --- */
+      .events {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px 60px 48px;
+        gap: 16px;
+        position: relative;
+        z-index: 1;
+      }
+
+      /* --- Single event card --- */
+      .event {
+        display: flex;
+        align-items: stretch;
+        background: var(--bg-card);
+        border-left: 4px solid var(--accent);
+        border-radius: 0 6px 6px 0;
+        overflow: hidden;
+        opacity: 0;
+        transform: translateX(-40px);
+        animation: slideIn 0.6s ease forwards;
+        position: relative;
+      }
+
+      .event::before {
+        content: "";
         position: absolute;
-        top: -20px;
-        width: 800px;
-        z-index: -1;
+        inset: 0;
+        background: linear-gradient(90deg, var(--accent-glow) 0%, transparent 40%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        pointer-events: none;
       }
 
-      ul {
-        list-style-type: none;
-        margin-top: 30px;
-        padding: 10px;
+      .event:nth-child(1) { animation-delay: 0.15s; }
+      .event:nth-child(2) { animation-delay: 0.3s; }
+      .event:nth-child(3) { animation-delay: 0.45s; }
+      .event:nth-child(4) { animation-delay: 0.6s; }
+      .event:nth-child(5) { animation-delay: 0.75s; }
+      .event:nth-child(6) { animation-delay: 0.9s; }
+
+      @keyframes slideIn {
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
       }
 
-      li {
-        color: #eeeeee;
-        padding-bottom: 50px;
+      /* --- Date badge --- */
+      .event-date {
+        flex-shrink: 0;
+        width: 260px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px 28px;
+        background: var(--steel);
+        font-family: "Bebas Neue", "Oswald", sans-serif;
+        font-size: 36px;
+        letter-spacing: 2px;
+        color: var(--text-primary);
         text-align: center;
+        position: relative;
       }
 
-      li .title {
-        font-size: 5em;
-        font-weight: bold;
+      /* Angled edge on date badge */
+      .event-date::after {
+        content: "";
+        position: absolute;
+        right: -20px;
+        top: 0;
+        bottom: 0;
+        width: 40px;
+        background: var(--steel);
+        clip-path: polygon(0 0, 0% 100%, 100% 100%);
       }
-      li .subtitle {
-        font-size: 3.5em;
-        margin-top: -0.5em;
-        font-style: italic;
+
+      /* --- Event info --- */
+      .event-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 28px 36px 28px 40px;
       }
-      li .date {
-        font-size: 3.5em;
+
+      .event-title {
+        font-family: "Bebas Neue", "Oswald", sans-serif;
+        font-size: 52px;
+        line-height: 1;
+        letter-spacing: 2px;
+        color: var(--text-primary);
+      }
+
+      .event-subtitle {
+        font-size: 24px;
+        font-weight: 400;
+        color: var(--text-muted);
+        margin-top: 4px;
+        letter-spacing: 1px;
+      }
+
+      /* --- Index number --- */
+      .event-index {
+        flex-shrink: 0;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Bebas Neue", "Oswald", sans-serif;
+        font-size: 100px;
+        color: var(--steel);
+        user-select: none;
+      }
+
+      /* --- Error state --- */
+      .error {
+        color: var(--accent);
+        font-size: 24px;
+        padding: 40px;
+        text-align: center;
       }
     </style>
   </head>
   <body>
-    <div class="bg-icon"><img src="./calendar_angle.svg" alt="" /></div>
-    <div class="table">
-      <ul id="schema"></ul>
+    <div class="header">
+      <div class="header-label">MetalBox</div>
+      <div class="header-title">KOMMANDE</div>
+      <div class="header-line"></div>
     </div>
+
+    <div class="events" id="events"></div>
 
     <script>
       var getJSON = function (url, callback) {
@@ -63,54 +245,61 @@
         xhr.open("GET", url, true);
         xhr.responseType = "json";
         xhr.onload = function () {
-          var status = xhr.status;
-          if (status === 200) {
+          if (xhr.status === 200) {
             callback(null, xhr.response);
           } else {
-            callback(status, xhr.response);
+            callback(xhr.status, xhr.response);
           }
+        };
+        xhr.onerror = function () {
+          callback("Network error", null);
         };
         xhr.send();
       };
 
-      var key = "total";
-      var sortByTotal = function (a, b) {
-        return a[key] - b[key];
+      var container = document.getElementById("events");
+
+      var createEvent = function (data, index) {
+        var card = document.createElement("div");
+        card.className = "event";
+
+        var dateEl = '<div class="event-date">' + data.date + "</div>";
+        var infoEl =
+          '<div class="event-info">' +
+          '<div class="event-title">' + data.title + "</div>" +
+          '<div class="event-subtitle">' + data.subtitle + "</div>" +
+          "</div>";
+        var indexEl =
+          '<div class="event-index">' + String(index + 1).padStart(2, "0") + "</div>";
+
+        card.innerHTML = dateEl + infoEl + indexEl;
+        container.appendChild(card);
       };
 
-      var schemaContainer = document.getElementById("schema");
-      try {
-        var createLine = function (data) {
-          var li = document.createElement("li");
-          li.className = "entry";
-          var line = '<div class="title">' + data["title"] + "</div>";
-          line += '<div class="subtitle">' + data["subtitle"] + "</div>";
-          line += '<div class="date">' + data["date"] + "</div>";
-          li.innerHTML = line;
-          schemaContainer.appendChild(li);
-        };
+      var handleError = function (error, data) {
+        container.innerHTML =
+          '<div class="error">' + error + (data ? " — " + data : "") + "</div>";
+      };
 
-        var handleError = function (error, data) {
-          schemaContainer.innerHTML =
-            '<div class="error">' + error + " -- " + (data || "") + "</div>";
-        };
-
-        getJSON("upcoming.json", function (error, data) {
-          if (error) {
-            handleError(error, data);
-          } else {
-            try {
-              for (var i = 0; i < data.length; i++) {
-                createLine(data[i]);
-              }
-            } catch (error) {
-              handleError(error, data);
+      getJSON("upcoming.json", function (error, data) {
+        if (error) {
+          handleError(error, data);
+        } else {
+          try {
+            var today = new Date().toISOString().slice(0, 10);
+            var filtered = data.filter(function (event) {
+              if (event.displayStart && event.displayStart > today) return false;
+              if (event.displayEnd && event.displayEnd < today) return false;
+              return true;
+            });
+            for (var i = 0; i < filtered.length; i++) {
+              createEvent(filtered[i], i);
             }
+          } catch (e) {
+            handleError(e, data);
           }
-        });
-      } catch (ex) {
-        schemaContainer.innerText = ex;
-      }
+        }
+      });
     </script>
   </body>
 </html>
