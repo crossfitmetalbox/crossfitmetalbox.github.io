@@ -1,0 +1,14 @@
+[
+    { "name": "Simon Palm", "reservations": 19 },
+    { "name": "Aylin", "reservations": 14 },
+    { "name": "Roger Carlelycke", "reservations": 13 },
+    { "name": "Caroline", "reservations": 13 },
+    { "name": "Lisa Ziegler", "reservations": 12 },
+    { "name": "Martin", "reservations": 11 },
+    { "name": "Maria", "reservations": 10 },
+    { "name": "Viktoria", "reservations": 9 },
+    { "name": "Therése", "reservations": 9 },
+    { "name": "Linnéa", "reservations": 7 },
+    { "name": "Sarah", "reservations": 7 },
+    { "name": "Lisa Englund", "reservations": 3 }
+]
