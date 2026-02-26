@@ -4,160 +4,318 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BTWB</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Oswald&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Bebas+Neue&display=swap"
       rel="stylesheet"
     />
 
     <style>
-      body {
-        background-color: #dddddd;
-        /* background: linear-gradient(#dddddd, #ffffff); */
-        font-family: "Oswald", sans-serif;
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
       }
+
+      :root {
+        --bg-dark: #0e0e0e;
+        --bg-card: rgba(22, 22, 22, 0.85);
+        --accent: #f16521;
+        --accent-secondary: #fec10d;
+        --accent-red: #ed1c24;
+        --accent-glow: rgba(241, 101, 33, 0.3);
+        --text-primary: #f1f1f1;
+        --text-muted: #8a8a8a;
+        --steel: #2a2d30;
+      }
+
+      html, body {
+        height: 100%;
+        overflow: hidden;
+      }
+
+      body {
+        background: var(--bg-dark) !important;
+        font-family: "Oswald", sans-serif !important;
+        color: var(--text-primary) !important;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+
+      /* --- Noise texture overlay --- */
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+        pointer-events: none;
+        z-index: 100;
+      }
+
+      /* --- Diagonal accent stripe --- */
+      body::after {
+        content: "";
+        position: fixed;
+        top: -50%;
+        right: -5%;
+        width: 8px;
+        height: 200%;
+        background: linear-gradient(to bottom, var(--accent-secondary), var(--accent), var(--accent-red));
+        transform: rotate(12deg);
+        opacity: 0.45;
+        z-index: 0;
+      }
+
+      /* --- Header --- */
+      .header {
+        padding: 60px 50px 20px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .header-label {
+        font-family: "Oswald", sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 8px;
+      }
+
+      .header-title {
+        font-family: "Bebas Neue", "Oswald", sans-serif;
+        font-size: 96px;
+        line-height: 0.95;
+        letter-spacing: 3px;
+        color: var(--text-primary);
+      }
+
+      .header-date {
+        font-family: "Bebas Neue", "Oswald", sans-serif;
+        font-size: 96px;
+        line-height: 0.95;
+        letter-spacing: 3px;
+        color: var(--accent);
+      }
+
+      .header-line {
+        width: 100px;
+        height: 5px;
+        background: var(--accent);
+        margin-top: 20px;
+      }
+
+      /* --- BTWB container --- */
+      .btwb-container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px 50px 60px;
+        position: relative;
+        z-index: 1;
+      }
+
+      /* ===========================
+         BTWB Widget CSS Overrides
+         =========================== */
 
       div.btwb_webwidget {
-        background-color: transparent;
-        background: linear-gradient(#f7a18e, #dddddd);
-        margin: 0;
-        padding: 30px 10px;
+        background: transparent !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        font-family: "Oswald", sans-serif !important;
       }
 
-      h5 {
-        color: #df340e;
-        font-size: 30px;
-        text-transform: uppercase;
-      }
-      h5:before {
-        border: 5px solid #df340e;
-        color: #df340e;
-        font-size: 40px;
-        text-transform: uppercase;
-        padding: 0 12px;
-        margin-right: 20px;
-      }
-
-      li > div {
-        color: #434343;
-        margin: 40px 0;
-      }
-
-      .btwb-wod-list li:nth-child(1) h5:before {
-        content: 'A';
-      }
-      .btwb-wod-list li:nth-child(2) h5:before {
-        content: 'B';
-      }
-      .btwb-wod-list li:nth-child(3) h5:before {
-        content: 'C';
-      }
-      .btwb-wod-list li:nth-child(4) h5:before {
-        content: 'D';
-      }
-      .btwb-wod-list li:nth-child(5) h5:before {
-        content: 'E';
-      }
-      .btwb-wod-list li:nth-child(6) h5:before {
-        content: 'F';
-      }
-
-      .btwb-wod-links {
-        display: none;
-      }
-
-      .btwb-leaderboard,
-      .btwb-recent-results {
-        display: none;
-      }
-      
-      .btwb-result-container {
-        display: none;
-      }
-
-      h6 {
-        color: #212121;
-        display: none;
-        font-size: 36px;
-        font-weight: bold;
-        margin-bottom: 5px;
-        margin-top: 10px;
-      }
-
-      div.head {
-        background-color: #f7a18e;
-        border-bottom: 5px solid #ffa997; /*#df340e;*/
-        height: 100px;
-        position: relative;
-        width: 100vw;
-      }
-
-      div.head > div {
-        height: 100px;
-        position: absolute;
-        top: 0;
-      }
-
-      div.title {
-        color: #212121;
-        font-size: 80px;
-        font-weight: bold;
-        left: 200px;
-        text-transform: uppercase;
-      }
-
-      div.title .highlight {
-        color: #efefef;
-        font-size: 80px;
-        font-weight: bold;
-        left: 280px;
-        text-transform: uppercase;
-      }
-
+      /* --- WOD list --- */
       ul.btwb-wod-list {
-        /* WOD Track */
-        background-color: transparent;
-        margin-bottom: 20px;
+        list-style: none !important;
+        background: transparent !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
       }
+
       ul.btwb-wod-list li {
-        /* WOD Parts */
-        background-color: transparent;
+        background: var(--bg-card) !important;
+        border-left: 5px solid var(--accent);
+        border-radius: 0 6px 6px 0;
+        padding: 0 !important;
+        margin: 0 !important;
+        display: block !important;
+        overflow: hidden;
+        opacity: 0;
+        transform: translateX(-40px);
+        animation: slideIn 0.6s ease forwards;
+        position: relative;
+        padding-left: 120px !important;
       }
+
+      /* Badge background via li::before */
+      ul.btwb-wod-list li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 120px;
+        background: var(--steel);
+      }
+
+      /* Angled edge on badge */
+      ul.btwb-wod-list li::after {
+        content: "";
+        position: absolute;
+        left: 100px;
+        top: 0;
+        bottom: 0;
+        width: 40px;
+        background: var(--steel);
+        clip-path: polygon(0 0, 0% 100%, 100% 100%);
+      }
+
+      ul.btwb-wod-list li:nth-child(1) { animation-delay: 0.15s; }
+      ul.btwb-wod-list li:nth-child(2) { animation-delay: 0.3s; }
+      ul.btwb-wod-list li:nth-child(3) { animation-delay: 0.45s; }
+      ul.btwb-wod-list li:nth-child(4) { animation-delay: 0.6s; }
+      ul.btwb-wod-list li:nth-child(5) { animation-delay: 0.75s; }
+      ul.btwb-wod-list li:nth-child(6) { animation-delay: 0.9s; }
+
+      @keyframes slideIn {
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
       ul.btwb-wod-list li hr {
-        display: none;
+        display: none !important;
       }
 
-      /* Additional info */
-      ul.btwb-wod-list li p i {
-        color: #212121;
-        font-size: 18px;
-        font-style: italic;
+      /* --- Part title (h5) --- */
+      ul.btwb-wod-list li h5 {
+        display: block !important;
+        margin: 0 !important;
+        padding: 36px 36px 0 40px !important;
+        background: transparent !important;
+        font-family: "Bebas Neue", "Oswald", sans-serif !important;
+        font-size: 42px !important;
+        color: var(--accent) !important;
+        font-weight: normal !important;
+        position: relative;
       }
 
-      ul.btwb-wod-list li small {
-        color: #434343;
-        font-size: 10px;
-        font-style: italic;
+      /* Part letters via ::before */
+      ul.btwb-wod-list li h5::before {
+        font-family: "Bebas Neue", "Oswald", sans-serif !important;
+        font-size: 72px !important;
+        font-weight: normal !important;
+        color: var(--accent) !important;
+        border: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        position: absolute;
+        left: -100px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100px;
+        text-align: center;
       }
 
-      ul.btwb-wod-list li small {
-        display: none;
-      }
+      .btwb-wod-list li:nth-child(1) h5:before { content: 'A'; }
+      .btwb-wod-list li:nth-child(2) h5:before { content: 'B'; }
+      .btwb-wod-list li:nth-child(3) h5:before { content: 'C'; }
+      .btwb-wod-list li:nth-child(4) h5:before { content: 'D'; }
+      .btwb-wod-list li:nth-child(5) h5:before { content: 'E'; }
+      .btwb-wod-list li:nth-child(6) h5:before { content: 'F'; }
 
+      /* --- Workout description --- */
+      li > div,
       .btwb-workout-description {
-        font-size: 30px;
-        padding-left: 80px;
+        color: var(--text-primary) !important;
+        font-family: "Oswald", sans-serif !important;
+        font-size: 36px !important;
+        line-height: 1.4 !important;
+        padding: 36px 36px 36px 40px !important;
+        margin: 0 !important;
+        white-space: pre-wrap;
+      }
+
+      /* Reduce top padding on description when h5 is present above */
+      h5 + .btwb-workout-description {
+        padding-top: 12px !important;
+      }
+
+      /* Additional info text */
+      ul.btwb-wod-list li p i {
+        color: var(--text-muted) !important;
+        font-size: 24px !important;
+        font-style: italic;
+      }
+
+      ul.btwb-wod-list li small {
+        display: none !important;
+      }
+
+      /* --- Subtitle (h6) --- */
+      h6 {
+        display: none !important;
+      }
+
+      /* --- Hide unwanted widget parts --- */
+      .btwb-wod-links,
+      .btwb-leaderboard,
+      .btwb-recent-results,
+      .btwb-result-container {
+        display: none !important;
+      }
+
+      .myContainer {
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+
+      /* --- Error style --- */
+      .error_style {
+        color: var(--accent) !important;
+        background: var(--bg-card) !important;
+        font-size: 28px !important;
+        padding: 40px !important;
+        text-align: center;
+        border-radius: 6px;
       }
     </style>
   </head>
-  <body style="padding: 0; margin: 0;">
-    <div class="head">
-      <!-- <div class="icon"><img src="images/btwb-logo.png" height="100px" alt="BTWB" /></div> -->
-      <div class="title"><span class="highlight">WORKOUT</span> OF THE DAY</div>
+  <body>
+    <div class="header">
+      <div class="header-label">MetalBox</div>
+      <div class="header-title">DAGENS PASS</div>
+      <div class="header-date" id="today-date"></div>
+      <div class="header-line"></div>
     </div>
+
     <div id="btwb-container" class="btwb-container"></div>
+
     <script>
-      var dateString = (new Date).toLocaleDateString('sv-SE');
-      console.log(dateString);
+      var dateString = new Date().toLocaleDateString("sv-SE");
+
+      // Display formatted date in header
+      var dateEl = document.getElementById("today-date");
+      var today = new Date();
+      var dayNames = ["Söndag", "Måndag", "Tisdag", "Onsdag", "Torsdag", "Fredag", "Lördag"];
+      var monthNames = ["Januari", "Februari", "Mars", "April", "Maj", "Juni",
+        "Juli", "Augusti", "September", "Oktober", "November", "December"];
+      dateEl.textContent = dayNames[today.getDay()] + " " + today.getDate() + " " + monthNames[today.getMonth()];
 
       var container = document.querySelector("#btwb-container");
 
@@ -186,11 +344,5 @@
       rel="stylesheet"
       href="https://static.btwb.com/libs/webwidgets/2/webwidgets.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
-    />
-
-
   </body>
 </html>
