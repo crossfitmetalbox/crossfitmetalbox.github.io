@@ -253,7 +253,7 @@
     <div class="header">
       <div class="header-label">MetalBox</div>
       <div class="header-title">MEST AKTIVA</div>
-      <div class="header-month">JANUARI</div>
+      <div class="header-month"></div>
       <div class="header-line"></div>
     </div>
 
@@ -286,22 +286,30 @@
           return;
         }
 
-        // Sort descending by reservations
-        data.sort(function (a, b) { return b.reservations - a.reservations; });
+        // Derive month name (Swedish) from firstOccurence of the first entry
+        var swedishMonths = [
+          "Januari", "Februari", "Mars", "April", "Maj", "Juni",
+          "Juli", "Augusti", "September", "Oktober", "November", "December"
+        ];
+        if (data.length > 0 && data[0].firstOccurence) {
+          var monthIndex = new Date(data[0].firstOccurence).getMonth();
+          document.querySelector(".header-month").textContent = swedishMonths[monthIndex].toUpperCase();
+        }
+
+        // Sort descending by reservationCount
+        data.sort(function (a, b) { return b.reservationCount - a.reservationCount; });
 
         // Build display names: first name only, unless duplicates exist
         var firstNames = {};
         for (var i = 0; i < data.length; i++) {
-          var parts = data[i].name.split(" ");
-          var first = parts[0];
+          var first = data[i].firstName;
           if (!firstNames[first]) firstNames[first] = 0;
           firstNames[first]++;
         }
         for (var i = 0; i < data.length; i++) {
-          var parts = data[i].name.split(" ");
-          var first = parts[0];
-          if (firstNames[first] > 1 && parts.length > 1) {
-            data[i].displayName = first + " " + parts[1].charAt(0);
+          var first = data[i].firstName;
+          if (firstNames[first] > 1 && data[i].lastName) {
+            data[i].displayName = first + " " + data[i].lastName.charAt(0);
           } else {
             data[i].displayName = first;
           }
@@ -311,9 +319,9 @@
         var groups = [];
         var lastCount = null;
         for (var i = 0; i < data.length; i++) {
-          if (data[i].reservations !== lastCount) {
+          if (data[i].reservationCount !== lastCount) {
             groups.push([]);
-            lastCount = data[i].reservations;
+            lastCount = data[i].reservationCount;
           }
           groups[groups.length - 1].push(data[i].displayName);
         }

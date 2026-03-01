@@ -1,114 +1,198 @@
 [
         {
-            "name": "Simon Palm",
-            "reservations": 17
-            },
+            "firstName": "Simon",
+            "lastName": "Palm",
+            "reservationCount": 17,
+            "firstOccurence": "2026-02-02T17:00:00",
+            "lastOccurence": "2026-02-28T10:00:00"
+        },
         {
-            "name": "Aylin Yilmaz",
-            "reservations": 15
-            },
+            "firstName": "Aylin",
+            "lastName": "Yilmaz",
+            "reservationCount": 15,
+            "firstOccurence": "2026-02-02T17:00:00",
+            "lastOccurence": "2026-02-28T10:00:00"
+        },
         {
-            "name": "Christer Svärd",
-            "reservations": 13
-            },
+            "firstName": "Christer",
+            "lastName": "Svärd",
+            "reservationCount": 13,
+            "firstOccurence": "2026-02-02T17:00:00",
+            "lastOccurence": "2026-02-26T17:00:00"
+        },
         {
-            "name": "Roger Carlelycke",
-            "reservations": 10
-            },
+            "firstName": "Roger",
+            "lastName": "Carlelycke",
+            "reservationCount": 10,
+            "firstOccurence": "2026-02-03T17:00:00",
+            "lastOccurence": "2026-02-26T17:00:00"
+        },
         {
-            "name": "Ida Cicola",
-            "reservations": 9
-            },
+            "firstName": "Ida",
+            "lastName": "Cicola",
+            "reservationCount": 9,
+            "firstOccurence": "2026-02-03T17:00:00",
+            "lastOccurence": "2026-02-26T06:30:00"
+        },
         {
-            "name": "Peter Andreasson",
-            "reservations": 8
-            },
+            "firstName": "Peter",
+            "lastName": "Andreasson",
+            "reservationCount": 8,
+            "firstOccurence": "2026-02-03T17:00:00",
+            "lastOccurence": "2026-02-26T17:00:00"
+        },
         {
-            "name": "Mikael Arvidsson",
-            "reservations": 8
-            },
+            "firstName": "Mikael",
+            "lastName": "Arvidsson",
+            "reservationCount": 8,
+            "firstOccurence": "2026-02-03T17:00:00",
+            "lastOccurence": "2026-02-26T17:00:00"
+        },
         {
-            "name": "Viktoria Wendschlag",
-            "reservations": 7
-            },
+            "firstName": "Viktoria",
+            "lastName": "Wendschlag",
+            "reservationCount": 7,
+            "firstOccurence": "2026-02-05T17:00:00",
+            "lastOccurence": "2026-02-26T17:00:00"
+        },
         {
-            "name": "Jesper Stien",
-            "reservations": 7
-            },
+            "firstName": "Jesper",
+            "lastName": "Stien",
+            "reservationCount": 7,
+            "firstOccurence": "2026-02-03T06:30:00",
+            "lastOccurence": "2026-02-26T06:30:00"
+        },
         {
-            "name": "Gabrijela Psag",
-            "reservations": 7
-            },
+            "firstName": "Gabrijela",
+            "lastName": "Psag",
+            "reservationCount": 7,
+            "firstOccurence": "2026-02-04T17:00:00",
+            "lastOccurence": "2026-02-24T18:15:00"
+        },
         {
-            "name": "Sarah Palm",
-            "reservations": 6
-            },
+            "firstName": "Sarah",
+            "lastName": "Palm",
+            "reservationCount": 6,
+            "firstOccurence": "2026-02-02T17:00:00",
+            "lastOccurence": "2026-02-28T10:00:00"
+        },
         {
-            "name": "Hampus Dreifaldt",
-            "reservations": 6
-            },
+            "firstName": "Hampus",
+            "lastName": "Dreifaldt",
+            "reservationCount": 6,
+            "firstOccurence": "2026-02-03T18:15:00",
+            "lastOccurence": "2026-02-24T06:30:00"
+        },
         {
-            "name": "Laura Mitchell-Downie",
-            "reservations": 5
-            },
+            "firstName": "Laura",
+            "lastName": "Mitchell-Downie",
+            "reservationCount": 5,
+            "firstOccurence": "2026-02-14T10:00:00",
+            "lastOccurence": "2026-02-28T10:00:00"
+        },
         {
-            "name": "Lisa Englund",
-            "reservations": 4
-            },
+            "firstName": "Lisa",
+            "lastName": "Englund",
+            "reservationCount": 4,
+            "firstOccurence": "2026-02-02T18:15:00",
+            "lastOccurence": "2026-02-18T18:15:00"
+        },
         {
-            "name": "Lisa Ziegler",
-            "reservations": 4
-            },
+            "firstName": "Lisa",
+            "lastName": "Ziegler",
+            "reservationCount": 4,
+            "firstOccurence": "2026-02-02T17:00:00",
+            "lastOccurence": "2026-02-16T17:00:00"
+        },
         {
-            "name": "Linnéa Möller",
-            "reservations": 3
-            },
+            "firstName": "Linnéa",
+            "lastName": "Möller",
+            "reservationCount": 3,
+            "firstOccurence": "2026-02-12T18:15:00",
+            "lastOccurence": "2026-02-26T17:00:00"
+        },
         {
-            "name": "Claes Djup",
-            "reservations": 3
-            },
+            "firstName": "Claes",
+            "lastName": "Djup",
+            "reservationCount": 3,
+            "firstOccurence": "2026-02-11T17:00:00",
+            "lastOccurence": "2026-02-24T17:00:00"
+        },
         {
-            "name": "Caroline Jivefalk",
-            "reservations": 3
-            },
+            "firstName": "Caroline",
+            "lastName": "Jivefalk",
+            "reservationCount": 3,
+            "firstOccurence": "2026-02-02T17:00:00",
+            "lastOccurence": "2026-02-23T17:00:00"
+        },
         {
-            "name": "Emma Karlsson",
-            "reservations": 3
-            },
+            "firstName": "Emma",
+            "lastName": "Karlsson",
+            "reservationCount": 3,
+            "firstOccurence": "2026-02-10T17:00:00",
+            "lastOccurence": "2026-02-17T17:00:00"
+        },
         {
-            "name": "Klas Tegnemyr",
-            "reservations": 2
-            },
+            "firstName": "Klas",
+            "lastName": "Tegnemyr",
+            "reservationCount": 2,
+            "firstOccurence": "2026-02-03T06:30:00",
+            "lastOccurence": "2026-02-28T10:00:00"
+        },
         {
-            "name": "Johan Edvinsson",
-            "reservations": 2
-            },
+            "firstName": "Johan",
+            "lastName": "Edvinsson",
+            "reservationCount": 2,
+            "firstOccurence": "2026-02-23T17:00:00",
+            "lastOccurence": "2026-02-26T17:00:00"
+        },
         {
-            "name": "Christian Jivefalk",
-            "reservations": 2
-            },
+            "firstName": "Christian",
+            "lastName": "Jivefalk",
+            "reservationCount": 2,
+            "firstOccurence": "2026-02-02T17:00:00",
+            "lastOccurence": "2026-02-25T17:00:00"
+        },
         {
-            "name": "Martin Sikström",
-            "reservations": 2
-            },
+            "firstName": "Martin",
+            "lastName": "Sikström",
+            "reservationCount": 2,
+            "firstOccurence": "2026-02-23T17:00:00",
+            "lastOccurence": "2026-02-24T17:00:00"
+        },
         {
-            "name": "Maria Sikström",
-            "reservations": 2
-            },
+            "firstName": "Maria",
+            "lastName": "Sikström",
+            "reservationCount": 2,
+            "firstOccurence": "2026-02-19T17:00:00",
+            "lastOccurence": "2026-02-23T17:00:00"
+        },
         {
-            "name": "Frida Claesson",
-            "reservations": 2
-            },
+            "firstName": "Frida",
+            "lastName": "Claesson",
+            "reservationCount": 2,
+            "firstOccurence": "2026-02-02T18:15:00",
+            "lastOccurence": "2026-02-19T18:15:00"
+        },
         {
-            "name": "Andreas Jagelund",
-            "reservations": 2
-            },
+            "firstName": "Andreas",
+            "lastName": "Jagelund",
+            "reservationCount": 2,
+            "firstOccurence": "2026-02-04T18:15:00",
+            "lastOccurence": "2026-02-06T06:30:00"
+        },
         {
-            "name": "Sebastian Romedahl",
-            "reservations": 1
-            },
+            "firstName": "Sebastian",
+            "lastName": "Romedahl",
+            "reservationCount": 1,
+            "firstOccurence": "2026-02-28T10:00:00",
+            "lastOccurence": "2026-02-28T10:00:00"
+        },
         {
-            "name": "Jonas Eriksson",
-            "reservations": 1
-            }
+            "firstName": "Jonas",
+            "lastName": "Eriksson",
+            "reservationCount": 1,
+            "firstOccurence": "2026-02-02T18:15:00",
+            "lastOccurence": "2026-02-02T18:15:00"
+        }
     ]
