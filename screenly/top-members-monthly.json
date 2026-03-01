@@ -1,14 +1,114 @@
 [
-    { "name": "Simon Palm", "reservations": 19 },
-    { "name": "Aylin", "reservations": 14 },
-    { "name": "Roger Carlelycke", "reservations": 13 },
-    { "name": "Caroline", "reservations": 13 },
-    { "name": "Lisa Ziegler", "reservations": 12 },
-    { "name": "Martin", "reservations": 11 },
-    { "name": "Maria", "reservations": 10 },
-    { "name": "Viktoria", "reservations": 9 },
-    { "name": "Therése", "reservations": 9 },
-    { "name": "Linnéa", "reservations": 7 },
-    { "name": "Sarah", "reservations": 7 },
-    { "name": "Lisa Englund", "reservations": 3 }
-]
+        {
+            "name": "Simon Palm",
+            "reservations": 17
+            },
+        {
+            "name": "Aylin Yilmaz",
+            "reservations": 15
+            },
+        {
+            "name": "Christer Svärd",
+            "reservations": 13
+            },
+        {
+            "name": "Roger Carlelycke",
+            "reservations": 10
+            },
+        {
+            "name": "Ida Cicola",
+            "reservations": 9
+            },
+        {
+            "name": "Peter Andreasson",
+            "reservations": 8
+            },
+        {
+            "name": "Mikael Arvidsson",
+            "reservations": 8
+            },
+        {
+            "name": "Viktoria Wendschlag",
+            "reservations": 7
+            },
+        {
+            "name": "Jesper Stien",
+            "reservations": 7
+            },
+        {
+            "name": "Gabrijela Psag",
+            "reservations": 7
+            },
+        {
+            "name": "Sarah Palm",
+            "reservations": 6
+            },
+        {
+            "name": "Hampus Dreifaldt",
+            "reservations": 6
+            },
+        {
+            "name": "Laura Mitchell-Downie",
+            "reservations": 5
+            },
+        {
+            "name": "Lisa Englund",
+            "reservations": 4
+            },
+        {
+            "name": "Lisa Ziegler",
+            "reservations": 4
+            },
+        {
+            "name": "Linnéa Möller",
+            "reservations": 3
+            },
+        {
+            "name": "Claes Djup",
+            "reservations": 3
+            },
+        {
+            "name": "Caroline Jivefalk",
+            "reservations": 3
+            },
+        {
+            "name": "Emma Karlsson",
+            "reservations": 3
+            },
+        {
+            "name": "Klas Tegnemyr",
+            "reservations": 2
+            },
+        {
+            "name": "Johan Edvinsson",
+            "reservations": 2
+            },
+        {
+            "name": "Christian Jivefalk",
+            "reservations": 2
+            },
+        {
+            "name": "Martin Sikström",
+            "reservations": 2
+            },
+        {
+            "name": "Maria Sikström",
+            "reservations": 2
+            },
+        {
+            "name": "Frida Claesson",
+            "reservations": 2
+            },
+        {
+            "name": "Andreas Jagelund",
+            "reservations": 2
+            },
+        {
+            "name": "Sebastian Romedahl",
+            "reservations": 1
+            },
+        {
+            "name": "Jonas Eriksson",
+            "reservations": 1
+            }
+    ]
