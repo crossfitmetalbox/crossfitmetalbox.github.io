@@ -1,10 +1,31 @@
 [
     {
-        "title": "Open 26.1",
-        "subtitle": "15:00 - 17:00",
-        "date": "1 mar",
+        "title": "Skill",
+        "subtitle": "Kipping techniques",
+        "date": "1 apr",
         "displayStart": "2026-02-01",
-        "displayEnd": "2026-03-01"
+        "displayEnd": "2026-04-01"
+    },
+    {
+        "title": "Skill",
+        "subtitle": "Kipping techniques",
+        "date": "15 apr",
+        "displayStart": "2026-02-01",
+        "displayEnd": "2026-04-15"
+    },
+    {
+        "title": "Skill",
+        "subtitle": "double unders",
+        "date": "29 apr",
+        "displayStart": "2026-04-02",
+        "displayEnd": "2026-04-29"
+    },
+    {
+        "title": "Boxtävling",
+        "subtitle": "Mer info kommer",
+        "date": "maj",
+        "displayStart": "2026-04-02",
+        "displayEnd": "2026-05-29"
     },
     {
         "title": "Testvecka",
