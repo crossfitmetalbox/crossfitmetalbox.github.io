@@ -2,86 +2,99 @@
         {
             "firstName": "Aylin",
             "lastName": "Yilmaz",
-            "reservationCount": 14
+            "reservationCount": 14,
+            "firstOccurence": "2026-03-03T17:00:00",
+            "lastOccurence": "2026-03-31T17:00:00"
         },
         {
             "firstName": "Christer",
             "lastName": "Svärd",
-            "reservationCount": 13
+            "reservationCount": 13,
+            "firstOccurence": "2026-03-02T18:15:00",
+            "lastOccurence": "2026-03-31T17:00:00"
         },
         {
             "firstName": "Simon",
             "lastName": "Palm",
-            "reservationCount": 12
+            "reservationCount": 12,
+            "firstOccurence": "2026-03-03T06:30:00",
+            "lastOccurence": "2026-03-28T10:00:00"
         },
         {
             "firstName": "Viktoria",
             "lastName": "Wendschlag",
-            "reservationCount": 11
+            "reservationCount": 11,
+            "firstOccurence": "2026-03-03T17:00:00",
+            "lastOccurence": "2026-03-31T17:00:00"
         },
         {
             "firstName": "Ida",
             "lastName": "Cicola",
-            "reservationCount": 10
+            "reservationCount": 10,
+            "firstOccurence": "2026-03-02T17:00:00",
+            "lastOccurence": "2026-03-30T17:00:00"
         },
         {
             "firstName": "Klas",
             "lastName": "Tegnemyr",
-            "reservationCount": 9
+            "reservationCount": 9,
+            "firstOccurence": "2026-03-03T06:30:00",
+            "lastOccurence": "2026-03-31T06:30:00"
         },
         {
             "firstName": "Emma",
             "lastName": "Karlsson",
-            "reservationCount": 8
+            "reservationCount": 8,
+            "firstOccurence": "2026-03-03T17:00:00",
+            "lastOccurence": "2026-03-31T17:00:00"
         },
         {
             "firstName": "Roger",
             "lastName": "Carlelycke",
-            "reservationCount": 8
+            "reservationCount": 8,
+            "firstOccurence": "2026-03-03T17:00:00",
+            "lastOccurence": "2026-03-31T17:00:00"
         },
         {
             "firstName": "Laura",
             "lastName": "Mitchell-Downie",
-            "reservationCount": 7
+            "reservationCount": 7,
+            "firstOccurence": "2026-03-03T17:00:00",
+            "lastOccurence": "2026-03-31T17:00:00"
         },
         {
             "firstName": "Sarah",
             "lastName": "Palm",
-            "reservationCount": 7
+            "reservationCount": 7,
+            "firstOccurence": "2026-03-01T15:00:00",
+            "lastOccurence": "2026-03-30T17:00:00"
         },
         {
             "firstName": "Jesper",
             "lastName": "Stien",
-            "reservationCount": 7
+            "reservationCount": 7,
+            "firstOccurence": "2026-03-03T06:30:00",
+            "lastOccurence": "2026-03-25T06:30:00"
         },
         {
             "firstName": "Peter",
             "lastName": "Andreasson",
-            "reservationCount": 6
+            "reservationCount": 6,
+            "firstOccurence": "2026-03-03T17:00:00",
+            "lastOccurence": "2026-03-31T17:00:00"
         },
         {
             "firstName": "Mikael",
             "lastName": "Arvidsson",
-            "reservationCount": 6
+            "reservationCount": 6,
+            "firstOccurence": "2026-03-03T17:00:00",
+            "lastOccurence": "2026-03-31T17:00:00"
         },
         {
             "firstName": "Andreas",
             "lastName": "Jagelund",
-            "reservationCount": 5
-        },
-        {
-            "firstName": "Lisa",
-            "lastName": "Ziegler",
-            "reservationCount": 4
-        },
-        {
-            "firstName": "Claes",
-            "lastName": "Djup",
-            "reservationCount": 4
-        },
-        {
-            "firstName": "Caroline",
-            "lastName": "Jivefalk",
-            "reservationCount": 4
+            "reservationCount": 5,
+            "firstOccurence": "2026-03-12T17:00:00",
+            "lastOccurence": "2026-03-31T17:00:00"
         }
     ]
