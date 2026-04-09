@@ -1,198 +1,87 @@
 [
         {
-            "firstName": "Simon",
-            "lastName": "Palm",
-            "reservationCount": 17,
-            "firstOccurence": "2026-02-02T17:00:00",
-            "lastOccurence": "2026-02-28T10:00:00"
-        },
-        {
             "firstName": "Aylin",
             "lastName": "Yilmaz",
-            "reservationCount": 15,
-            "firstOccurence": "2026-02-02T17:00:00",
-            "lastOccurence": "2026-02-28T10:00:00"
+            "reservationCount": 14
         },
         {
             "firstName": "Christer",
             "lastName": "Svärd",
-            "reservationCount": 13,
-            "firstOccurence": "2026-02-02T17:00:00",
-            "lastOccurence": "2026-02-26T17:00:00"
+            "reservationCount": 13
         },
         {
-            "firstName": "Roger",
-            "lastName": "Carlelycke",
-            "reservationCount": 10,
-            "firstOccurence": "2026-02-03T17:00:00",
-            "lastOccurence": "2026-02-26T17:00:00"
-        },
-        {
-            "firstName": "Ida",
-            "lastName": "Cicola",
-            "reservationCount": 9,
-            "firstOccurence": "2026-02-03T17:00:00",
-            "lastOccurence": "2026-02-26T06:30:00"
-        },
-        {
-            "firstName": "Peter",
-            "lastName": "Andreasson",
-            "reservationCount": 8,
-            "firstOccurence": "2026-02-03T17:00:00",
-            "lastOccurence": "2026-02-26T17:00:00"
-        },
-        {
-            "firstName": "Mikael",
-            "lastName": "Arvidsson",
-            "reservationCount": 8,
-            "firstOccurence": "2026-02-03T17:00:00",
-            "lastOccurence": "2026-02-26T17:00:00"
+            "firstName": "Simon",
+            "lastName": "Palm",
+            "reservationCount": 12
         },
         {
             "firstName": "Viktoria",
             "lastName": "Wendschlag",
-            "reservationCount": 7,
-            "firstOccurence": "2026-02-05T17:00:00",
-            "lastOccurence": "2026-02-26T17:00:00"
+            "reservationCount": 11
         },
         {
-            "firstName": "Jesper",
-            "lastName": "Stien",
-            "reservationCount": 7,
-            "firstOccurence": "2026-02-03T06:30:00",
-            "lastOccurence": "2026-02-26T06:30:00"
-        },
-        {
-            "firstName": "Gabrijela",
-            "lastName": "Psag",
-            "reservationCount": 7,
-            "firstOccurence": "2026-02-04T17:00:00",
-            "lastOccurence": "2026-02-24T18:15:00"
-        },
-        {
-            "firstName": "Sarah",
-            "lastName": "Palm",
-            "reservationCount": 6,
-            "firstOccurence": "2026-02-02T17:00:00",
-            "lastOccurence": "2026-02-28T10:00:00"
-        },
-        {
-            "firstName": "Hampus",
-            "lastName": "Dreifaldt",
-            "reservationCount": 6,
-            "firstOccurence": "2026-02-03T18:15:00",
-            "lastOccurence": "2026-02-24T06:30:00"
-        },
-        {
-            "firstName": "Laura",
-            "lastName": "Mitchell-Downie",
-            "reservationCount": 5,
-            "firstOccurence": "2026-02-14T10:00:00",
-            "lastOccurence": "2026-02-28T10:00:00"
-        },
-        {
-            "firstName": "Lisa",
-            "lastName": "Englund",
-            "reservationCount": 4,
-            "firstOccurence": "2026-02-02T18:15:00",
-            "lastOccurence": "2026-02-18T18:15:00"
-        },
-        {
-            "firstName": "Lisa",
-            "lastName": "Ziegler",
-            "reservationCount": 4,
-            "firstOccurence": "2026-02-02T17:00:00",
-            "lastOccurence": "2026-02-16T17:00:00"
-        },
-        {
-            "firstName": "Linnéa",
-            "lastName": "Möller",
-            "reservationCount": 3,
-            "firstOccurence": "2026-02-12T18:15:00",
-            "lastOccurence": "2026-02-26T17:00:00"
-        },
-        {
-            "firstName": "Claes",
-            "lastName": "Djup",
-            "reservationCount": 3,
-            "firstOccurence": "2026-02-11T17:00:00",
-            "lastOccurence": "2026-02-24T17:00:00"
-        },
-        {
-            "firstName": "Caroline",
-            "lastName": "Jivefalk",
-            "reservationCount": 3,
-            "firstOccurence": "2026-02-02T17:00:00",
-            "lastOccurence": "2026-02-23T17:00:00"
-        },
-        {
-            "firstName": "Emma",
-            "lastName": "Karlsson",
-            "reservationCount": 3,
-            "firstOccurence": "2026-02-10T17:00:00",
-            "lastOccurence": "2026-02-17T17:00:00"
+            "firstName": "Ida",
+            "lastName": "Cicola",
+            "reservationCount": 10
         },
         {
             "firstName": "Klas",
             "lastName": "Tegnemyr",
-            "reservationCount": 2,
-            "firstOccurence": "2026-02-03T06:30:00",
-            "lastOccurence": "2026-02-28T10:00:00"
+            "reservationCount": 9
         },
         {
-            "firstName": "Johan",
-            "lastName": "Edvinsson",
-            "reservationCount": 2,
-            "firstOccurence": "2026-02-23T17:00:00",
-            "lastOccurence": "2026-02-26T17:00:00"
+            "firstName": "Emma",
+            "lastName": "Karlsson",
+            "reservationCount": 8
         },
         {
-            "firstName": "Christian",
-            "lastName": "Jivefalk",
-            "reservationCount": 2,
-            "firstOccurence": "2026-02-02T17:00:00",
-            "lastOccurence": "2026-02-25T17:00:00"
+            "firstName": "Roger",
+            "lastName": "Carlelycke",
+            "reservationCount": 8
         },
         {
-            "firstName": "Martin",
-            "lastName": "Sikström",
-            "reservationCount": 2,
-            "firstOccurence": "2026-02-23T17:00:00",
-            "lastOccurence": "2026-02-24T17:00:00"
+            "firstName": "Laura",
+            "lastName": "Mitchell-Downie",
+            "reservationCount": 7
         },
         {
-            "firstName": "Maria",
-            "lastName": "Sikström",
-            "reservationCount": 2,
-            "firstOccurence": "2026-02-19T17:00:00",
-            "lastOccurence": "2026-02-23T17:00:00"
+            "firstName": "Sarah",
+            "lastName": "Palm",
+            "reservationCount": 7
         },
         {
-            "firstName": "Frida",
-            "lastName": "Claesson",
-            "reservationCount": 2,
-            "firstOccurence": "2026-02-02T18:15:00",
-            "lastOccurence": "2026-02-19T18:15:00"
+            "firstName": "Jesper",
+            "lastName": "Stien",
+            "reservationCount": 7
+        },
+        {
+            "firstName": "Peter",
+            "lastName": "Andreasson",
+            "reservationCount": 6
+        },
+        {
+            "firstName": "Mikael",
+            "lastName": "Arvidsson",
+            "reservationCount": 6
         },
         {
             "firstName": "Andreas",
             "lastName": "Jagelund",
-            "reservationCount": 2,
-            "firstOccurence": "2026-02-04T18:15:00",
-            "lastOccurence": "2026-02-06T06:30:00"
+            "reservationCount": 5
         },
         {
-            "firstName": "Sebastian",
-            "lastName": "Romedahl",
-            "reservationCount": 1,
-            "firstOccurence": "2026-02-28T10:00:00",
-            "lastOccurence": "2026-02-28T10:00:00"
+            "firstName": "Lisa",
+            "lastName": "Ziegler",
+            "reservationCount": 4
         },
         {
-            "firstName": "Jonas",
-            "lastName": "Eriksson",
-            "reservationCount": 1,
-            "firstOccurence": "2026-02-02T18:15:00",
-            "lastOccurence": "2026-02-02T18:15:00"
+            "firstName": "Claes",
+            "lastName": "Djup",
+            "reservationCount": 4
+        },
+        {
+            "firstName": "Caroline",
+            "lastName": "Jivefalk",
+            "reservationCount": 4
         }
     ]
