@@ -21,11 +21,39 @@
         "displayEnd": "2026-04-29"
     },
     {
-        "title": "Boxtävling",
-        "subtitle": "Partävling - mer info kommer",
-        "date": "maj",
+        "title": "Skill",
+        "subtitle": "shoulder to overhead",
+        "date": "13 maj",
+        "displayStart": "2026-04-14",
+        "displayEnd": "2026-05-13"
+    },
+    {
+        "title": "Skill",
+        "subtitle": "snatch",
+        "date": "27 maj",
+        "displayStart": "2026-04-30",
+        "displayEnd": "2026-05-27"
+    },
+    {
+        "title": "VÅRKAMPEN",
+        "subtitle": "Starkare tillsammans",
+        "date": "30 maj",
         "displayStart": "2026-03-25",
-        "displayEnd": "2026-05-29"
+        "displayEnd": "2026-05-30"
+    },
+{
+        "title": "Testvecka",
+        "subtitle": "front squats, shoulder press, power clean",
+        "date": "1 jun - 6 jun",
+        "displayStart": "2026-05-04",
+        "displayEnd": "2026-06-07"
+    },
+    {
+        "title": "Testvecka",
+        "subtitle": "clean & jerks, overhead squats, row, clusters",
+        "date": "8 jun - 13 jun",
+        "displayStart": "2026-05-11",
+        "displayEnd": "2026-06-13"
     },
     {
         "title": "Testvecka",
