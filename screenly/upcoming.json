@@ -1,40 +1,5 @@
 [
     {
-        "title": "Skill",
-        "subtitle": "Kipping techniques",
-        "date": "1 apr",
-        "displayStart": "2026-02-01",
-        "displayEnd": "2026-04-01"
-    },
-    {
-        "title": "Skill",
-        "subtitle": "clean",
-        "date": "15 apr",
-        "displayStart": "2026-02-01",
-        "displayEnd": "2026-04-15"
-    },
-    {
-        "title": "Skill",
-        "subtitle": "double unders",
-        "date": "29 apr",
-        "displayStart": "2026-04-02",
-        "displayEnd": "2026-04-29"
-    },
-    {
-        "title": "Skill",
-        "subtitle": "shoulder to overhead",
-        "date": "12 maj",
-        "displayStart": "2026-04-14",
-        "displayEnd": "2026-05-12"
-    },
-    {
-        "title": "Skill",
-        "subtitle": "snatch",
-        "date": "27 maj",
-        "displayStart": "2026-04-30",
-        "displayEnd": "2026-05-27"
-    },
-    {
         "title": "Testvecka",
         "subtitle": "front squats, shoulder press, power clean",
         "date": "1 jun - 6 jun",
@@ -57,17 +22,31 @@
     },
     {
         "title": "Sommarschema",
-        "subtitle": "Open Gym och kvällspass",
-        "date": "22 jun - 9 aug",
+        "subtitle": "Ordinarie schema",
+        "date": "22 jun - 28 jun",
         "displayStart": "2026-06-22",
-        "displayEnd": "2026-08-09"
+        "displayEnd": "2026-06-28"
     },
     {
-        "title": "Open 26.2",
-        "subtitle": "15:00 - 17:00",
-        "date": "8 mar",
-        "displayStart": "2026-02-20",
-        "displayEnd": "2026-03-08"
+        "title": "Sommarschema",
+        "subtitle": "2 kvällspass vardagar, Open Gym lördag & söndag",
+        "date": "29 jun - 6 jul",
+        "displayStart": "2026-06-22",
+        "displayEnd": "2026-07-06"
+    },
+    {
+        "title": "Sommarschema",
+        "subtitle": "1-2 kvällspass vardagar, Open Gym lördag & söndag",
+        "date": "7 jul - 2 aug",
+        "displayStart": "2026-06-22",
+        "displayEnd": "2026-08-02"
+    },
+    {
+        "title": "Sommarschema",
+        "subtitle": "2 kvällspass vardagar, teampass lördag, Open Gym söndag",
+        "date": "3 aug - 9 aug",
+        "displayStart": "2026-06-22",
+        "displayEnd": "2026-08-09"
     },
     {
         "title": "Testvecka",
@@ -75,12 +54,5 @@
         "date": "9 mar - 14 mar",
         "displayStart": "2026-02-20",
         "displayEnd": "2026-03-14"
-    },
-    {
-        "title": "Open 26.3",
-        "subtitle": "15:00 - 17:00",
-        "date": "15 mar",
-        "displayStart": "2026-02-20",
-        "displayEnd": "2026-03-15"
     }
 ]
