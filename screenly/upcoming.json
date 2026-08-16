@@ -1,33 +1,5 @@
 [
     {
-        "title": "Testvecka",
-        "subtitle": "front squats, shoulder press, power clean",
-        "date": "1 jun - 6 jun",
-        "displayStart": "2026-05-04",
-        "displayEnd": "2026-06-07"
-    },
-    {
-        "title": "Testvecka",
-        "subtitle": "clean & jerks, overhead squats, row, clusters",
-        "date": "8 jun - 12 jun",
-        "displayStart": "2026-05-11",
-        "displayEnd": "2026-06-12"
-    },
-    {
-        "title": "Testvecka",
-        "subtitle": "deadlift, Annie, clean & jerk, row, thrusters",
-        "date": "2 mar - 7 mar",
-        "displayStart": "2026-02-20",
-        "displayEnd": "2026-03-07"
-    },
-    {
-        "title": "Sommarschema",
-        "subtitle": "Ordinarie schema",
-        "date": "22 jun - 28 jun",
-        "displayStart": "2026-06-22",
-        "displayEnd": "2026-06-28"
-    },
-    {
         "title": "Sommarschema",
         "subtitle": "2 kvällspass vardagar, Open Gym lördag & söndag",
         "date": "29 jun - 6 jul",
@@ -49,10 +21,38 @@
         "displayEnd": "2026-08-09"
     },
     {
+        "title": "Schema",
+        "subtitle": "Höstpremiär morgonpass",
+        "date": "18 augusti",
+        "displayStart": "2026-08-03",
+        "displayEnd": "2026-08-23"
+    },
+    {
         "title": "Testvecka",
         "subtitle": "back squat, pull-ups, snatch, splits squats, bench press",
-        "date": "9 mar - 14 mar",
-        "displayStart": "2026-02-20",
-        "displayEnd": "2026-03-14"
+        "date": "31 aug - 4 sep",
+        "displayStart": "2026-08-16",
+        "displayEnd": "2026-09-06"
+    },
+    {
+        "title": "Testvecka",
+        "subtitle": "deadlift, Annie, clean & jerk, row, thrusters",
+        "date": "7 sep - 11 sep",
+        "displayStart": "2026-08-16",
+        "displayEnd": "2026-09-13"
+    },
+    {
+        "title": "Testvecka",
+        "subtitle": "front squats, shoulder press, power clean",
+        "date": "30 nov - 4 dec",
+        "displayStart": "2026-10-30",
+        "displayEnd": "2026-12-06"
+    },
+    {
+        "title": "Testvecka",
+        "subtitle": "clean & jerks, overhead squats, row, clusters",
+        "date": "7 dec - 11 dec",
+        "displayStart": "2026-11-07",
+        "displayEnd": "2026-12-20"
     }
 ]
