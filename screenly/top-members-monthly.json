@@ -1,227 +1,129 @@
+
 [
-    {
-        "firstName": "Mikael",
-        "lastName": "Arvidsson",
-        "email": "mikael.arvidson74@gmail.com",
-        "reservationCount": 8,
-        "averageCount": 1.8064516129032258,
-        "firstOccurence": "2026-08-04T17:00:00",
-        "lastOccurence": "2026-08-27T17:00:00"
-    },
     {
         "firstName": "Simon",
         "lastName": "Palm",
-        "email": "simon_palm@hotmail.se",
-        "reservationCount": 8,
-        "averageCount": 1.8064516129032258,
-        "firstOccurence": "2026-08-13T17:00:00",
-        "lastOccurence": "2026-08-27T06:30:00"
-    },
-    {
-        "firstName": "Viktoria",
-        "lastName": "Wendschlag",
-        "email": "vikwen2020@gmail.com",
-        "reservationCount": 7,
-        "averageCount": 1.5806451612903225,
-        "firstOccurence": "2026-08-10T17:00:00",
-        "lastOccurence": "2026-08-31T17:00:00"
-    },
-    {
-        "firstName": "Christian",
-        "lastName": "Jivefalk",
-        "email": "christianjivefalk@gmail.com",
-        "reservationCount": 7,
-        "averageCount": 1.5806451612903225,
-        "firstOccurence": "2026-08-04T17:00:00",
-        "lastOccurence": "2026-08-24T17:00:00"
+        "reservationCount": 14,
+        "firstOccurence": "2026-09-01T06:30:00",
     },
     {
         "firstName": "Christer",
         "lastName": "Svärd",
-        "email": "christersvard65@live.se",
-        "reservationCount": 6,
-        "averageCount": 1.3548387096774193,
-        "firstOccurence": "2026-08-17T17:00:00",
-        "lastOccurence": "2026-08-31T17:00:00"
-    },
-    {
-        "firstName": "Ida",
-        "lastName": "Cicola",
-        "email": "ida.r.cicola@gmail.com",
-        "reservationCount": 6,
-        "averageCount": 1.3548387096774193,
-        "firstOccurence": "2026-08-10T17:00:00",
-        "lastOccurence": "2026-08-31T17:00:00"
-    },
-    {
-        "firstName": "Peter",
-        "lastName": "Andreasson",
-        "email": "stevebullstand@gmail.com",
-        "reservationCount": 6,
-        "averageCount": 1.3548387096774193,
-        "firstOccurence": "2026-08-04T17:00:00",
-        "lastOccurence": "2026-08-27T17:00:00"
-    },
-    {
-        "firstName": "Claes",
-        "lastName": "Djup",
-        "email": "claes@djup.info",
-        "reservationCount": 6,
-        "averageCount": 1.3548387096774193,
-        "firstOccurence": "2026-08-06T17:00:00",
-        "lastOccurence": "2026-08-25T17:00:00"
-    },
-    {
-        "firstName": "Panagiotis",
-        "lastName": "Nikolis",
-        "email": "panagiotis.nikolis@protonmail.com",
-        "reservationCount": 5,
-        "averageCount": 1.129032258064516,
-        "firstOccurence": "2026-08-17T17:00:00",
-        "lastOccurence": "2026-08-31T17:00:00"
-    },
-    {
-        "firstName": "Sarah",
-        "lastName": "Palm",
-        "email": "sfe.palm@gmail.com",
-        "reservationCount": 4,
-        "averageCount": 0.9032258064516129,
-        "firstOccurence": "2026-08-17T17:00:00",
-        "lastOccurence": "2026-08-31T17:00:00"
+        "reservationCount": 11,
+        "firstOccurence": "2026-09-01T17:00:00",
     },
     {
         "firstName": "Aylin",
         "lastName": "Yilmaz",
-        "email": "aylin_y@hotmail.com",
+        "reservationCount": 10,
+        "firstOccurence": "2026-09-01T17:00:00",
+    },
+    {
+        "firstName": "Viktoria",
+        "lastName": "Wendschlag",
+        "reservationCount": 9,
+        "firstOccurence": "2026-09-03T17:00:00",
+    },
+    {
+        "firstName": "Ida",
+        "lastName": "Cicola",
+        "reservationCount": 9,
+        "firstOccurence": "2026-09-01T06:30:00",
+    },
+    {
+        "firstName": "Peter",
+        "lastName": "Andreasson",
+        "reservationCount": 7,
+        "firstOccurence": "2026-09-01T17:00:00",
+    },
+    {
+        "firstName": "Mikael",
+        "lastName": "Arvidsson",
+        "reservationCount": 6,
+        "firstOccurence": "2026-09-01T17:00:00",
+    },
+    {
+        "firstName": "Panagiotis",
+        "lastName": "Nikolis",
+        "reservationCount": 5,
+        "firstOccurence": "2026-09-03T17:00:00",
+    },
+    {
+        "firstName": "Sarah",
+        "lastName": "Palm",
         "reservationCount": 4,
-        "averageCount": 0.9032258064516129,
-        "firstOccurence": "2026-08-10T17:00:00",
-        "lastOccurence": "2026-08-29T10:00:00"
+        "firstOccurence": "2026-09-02T17:00:00",
     },
     {
-        "firstName": "Mattias",
-        "lastName": "Alnervik",
-        "email": "mattias@alnervik.com",
-        "reservationCount": 3,
-        "averageCount": 0.6774193548387096,
-        "firstOccurence": "2026-08-19T18:15:00",
-        "lastOccurence": "2026-08-31T18:15:00"
-    },
-    {
-        "firstName": "Laura",
-        "lastName": "Mitchell-Downie",
-        "email": "mlaura311@gmail.com",
-        "reservationCount": 3,
-        "averageCount": 0.6774193548387096,
-        "firstOccurence": "2026-08-22T10:00:00",
-        "lastOccurence": "2026-08-29T10:00:00"
-    },
-    {
-        "firstName": "Gabrijela",
-        "lastName": "Psag",
-        "email": "gabrijela_u@hotmail.com",
-        "reservationCount": 3,
-        "averageCount": 0.6774193548387096,
-        "firstOccurence": "2026-08-19T17:00:00",
-        "lastOccurence": "2026-08-27T17:00:00"
-    },
-    {
-        "firstName": "Jonas",
-        "lastName": "Eriksson",
-        "email": "jonasehem@gmail.com",
-        "reservationCount": 3,
-        "averageCount": 0.6774193548387096,
-        "firstOccurence": "2026-08-04T17:00:00",
-        "lastOccurence": "2026-08-25T18:15:00"
-    },
-    {
-        "firstName": "Lisa",
-        "lastName": "Englund",
-        "email": "lisaenglund@live.se",
-        "reservationCount": 3,
-        "averageCount": 0.6774193548387096,
-        "firstOccurence": "2026-08-04T17:00:00",
-        "lastOccurence": "2026-08-25T18:15:00"
-    },
-    {
-        "firstName": "Magnus",
-        "lastName": "Alnervik",
-        "email": "alnervik@hotmail.com",
-        "reservationCount": 2,
-        "averageCount": 0.45161290322580644,
-        "firstOccurence": "2026-08-19T18:15:00",
-        "lastOccurence": "2026-08-31T18:15:00"
-    },
-    {
-        "firstName": "Klas",
-        "lastName": "Tegnemyr",
-        "email": "klas.tegnemyr@gmail.com",
-        "reservationCount": 2,
-        "averageCount": 0.45161290322580644,
-        "firstOccurence": "2026-08-22T10:00:00",
-        "lastOccurence": "2026-08-29T10:00:00"
+        "firstName": "Claes",
+        "lastName": "Djup",
+        "reservationCount": 4,
+        "firstOccurence": "2026-09-17T17:00:00",
     },
     {
         "firstName": "Maria",
         "lastName": "Sikström",
-        "email": "ceclinlar@gmail.com",
-        "reservationCount": 2,
-        "averageCount": 0.45161290322580644,
-        "firstOccurence": "2026-08-20T17:00:00",
-        "lastOccurence": "2026-08-28T17:00:00"
+        "reservationCount": 4,
+        "firstOccurence": "2026-09-02T17:00:00",
     },
     {
         "firstName": "Martin",
         "lastName": "Sikström",
-        "email": "apkrymp@gmail.com",
-        "reservationCount": 2,
-        "averageCount": 0.45161290322580644,
-        "firstOccurence": "2026-08-20T17:00:00",
-        "lastOccurence": "2026-08-28T17:00:00"
+        "reservationCount": 4,
+        "firstOccurence": "2026-09-02T17:00:00",
     },
     {
-        "firstName": "Jesper",
-        "lastName": "Stien",
-        "email": "jesperstien@hotmail.com",
-        "reservationCount": 2,
-        "averageCount": 0.45161290322580644,
-        "firstOccurence": "2026-08-18T18:15:00",
-        "lastOccurence": "2026-08-22T10:00:00"
-    },
-    {
-        "firstName": "Andreas",
-        "lastName": "Jagelund",
-        "email": "andreas@jagelund.se",
-        "reservationCount": 2,
-        "averageCount": 0.45161290322580644,
-        "firstOccurence": "2026-08-19T17:00:00",
-        "lastOccurence": "2026-08-21T17:00:00"
+        "firstName": "Gabrijela",
+        "lastName": "Psag",
+        "reservationCount": 4,
+        "firstOccurence": "2026-09-16T18:15:00",
     },
     {
         "firstName": "Lisa",
-        "lastName": "Ziegler",
-        "email": "L.ziegler@live.se",
-        "reservationCount": 1,
-        "averageCount": 0.22580645161290322,
-        "firstOccurence": "2026-08-31T17:00:00",
-        "lastOccurence": "2026-08-31T17:00:00"
+        "lastName": "Englund",
+        "reservationCount": 4,
+        "firstOccurence": "2026-09-01T18:15:00",
+    },
+    {
+        "firstName": "Laura",
+        "lastName": "Mitchell-Downie",
+        "reservationCount": 4,
+        "firstOccurence": "2026-09-01T17:00:00",
+    },
+    {
+        "firstName": "Karl",
+        "lastName": "Malmros",
+        "reservationCount": 4,
+        "firstOccurence": "2026-09-01T06:30:00",
     },
     {
         "firstName": "Malin",
         "lastName": "Nordin",
-        "email": "malin.nordin77@gmail.com",
-        "reservationCount": 1,
-        "averageCount": 0.22580645161290322,
-        "firstOccurence": "2026-08-22T10:00:00",
-        "lastOccurence": "2026-08-22T10:00:00"
+        "reservationCount": 3,
+        "firstOccurence": "2026-09-16T17:00:00",
     },
     {
-        "firstName": "Viktor",
-        "lastName": "Abrahamsson Larsson",
-        "email": "viktor.a.larsson89@gmail.com",
-        "reservationCount": 1,
-        "averageCount": 0.22580645161290322,
-        "firstOccurence": "2026-08-13T17:00:00",
-        "lastOccurence": "2026-08-13T17:00:00"
+        "firstName": "Jesper",
+        "lastName": "Stien",
+        "reservationCount": 3,
+        "firstOccurence": "2026-09-22T06:30:00",
+    },
+    {
+        "firstName": "Jonas",
+        "lastName": "Eriksson",
+        "reservationCount": 3,
+        "firstOccurence": "2026-09-01T18:15:00",
+    },
+    {
+        "firstName": "Andreas",
+        "lastName": "Jagelund",
+        "reservationCount": 3,
+        "firstOccurence": "2026-09-10T06:30:00",
+    },
+    {
+        "firstName": "Klas",
+        "lastName": "Tegnemyr",
+        "reservationCount": 2,
+        "firstOccurence": "2026-09-19T10:00:00",
     }
 ]
