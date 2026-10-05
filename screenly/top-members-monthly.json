@@ -1,129 +1,128 @@
-
 [
     {
         "firstName": "Simon",
         "lastName": "Palm",
         "reservationCount": 14,
-        "firstOccurence": "2026-09-01T06:30:00",
+        "firstOccurence": "2026-09-01T06:30:00"
     },
     {
         "firstName": "Christer",
         "lastName": "Svärd",
         "reservationCount": 11,
-        "firstOccurence": "2026-09-01T17:00:00",
+        "firstOccurence": "2026-09-01T17:00:00"
     },
     {
         "firstName": "Aylin",
         "lastName": "Yilmaz",
         "reservationCount": 10,
-        "firstOccurence": "2026-09-01T17:00:00",
+        "firstOccurence": "2026-09-01T17:00:00"
     },
     {
         "firstName": "Viktoria",
         "lastName": "Wendschlag",
         "reservationCount": 9,
-        "firstOccurence": "2026-09-03T17:00:00",
+        "firstOccurence": "2026-09-03T17:00:00"
     },
     {
         "firstName": "Ida",
         "lastName": "Cicola",
         "reservationCount": 9,
-        "firstOccurence": "2026-09-01T06:30:00",
+        "firstOccurence": "2026-09-01T06:30:00"
     },
     {
         "firstName": "Peter",
         "lastName": "Andreasson",
         "reservationCount": 7,
-        "firstOccurence": "2026-09-01T17:00:00",
+        "firstOccurence": "2026-09-01T17:00:00"
     },
     {
         "firstName": "Mikael",
         "lastName": "Arvidsson",
         "reservationCount": 6,
-        "firstOccurence": "2026-09-01T17:00:00",
+        "firstOccurence": "2026-09-01T17:00:00"
     },
     {
         "firstName": "Panagiotis",
         "lastName": "Nikolis",
         "reservationCount": 5,
-        "firstOccurence": "2026-09-03T17:00:00",
+        "firstOccurence": "2026-09-03T17:00:00"
     },
     {
         "firstName": "Sarah",
         "lastName": "Palm",
         "reservationCount": 4,
-        "firstOccurence": "2026-09-02T17:00:00",
+        "firstOccurence": "2026-09-02T17:00:00"
     },
     {
         "firstName": "Claes",
         "lastName": "Djup",
         "reservationCount": 4,
-        "firstOccurence": "2026-09-17T17:00:00",
+        "firstOccurence": "2026-09-17T17:00:00"
     },
     {
         "firstName": "Maria",
         "lastName": "Sikström",
         "reservationCount": 4,
-        "firstOccurence": "2026-09-02T17:00:00",
+        "firstOccurence": "2026-09-02T17:00:00"
     },
     {
         "firstName": "Martin",
         "lastName": "Sikström",
         "reservationCount": 4,
-        "firstOccurence": "2026-09-02T17:00:00",
+        "firstOccurence": "2026-09-02T17:00:00"
     },
     {
         "firstName": "Gabrijela",
         "lastName": "Psag",
         "reservationCount": 4,
-        "firstOccurence": "2026-09-16T18:15:00",
+        "firstOccurence": "2026-09-16T18:15:00"
     },
     {
         "firstName": "Lisa",
         "lastName": "Englund",
         "reservationCount": 4,
-        "firstOccurence": "2026-09-01T18:15:00",
+        "firstOccurence": "2026-09-01T18:15:00"
     },
     {
         "firstName": "Laura",
         "lastName": "Mitchell-Downie",
         "reservationCount": 4,
-        "firstOccurence": "2026-09-01T17:00:00",
+        "firstOccurence": "2026-09-01T17:00:00"
     },
     {
         "firstName": "Karl",
         "lastName": "Malmros",
         "reservationCount": 4,
-        "firstOccurence": "2026-09-01T06:30:00",
+        "firstOccurence": "2026-09-01T06:30:00"
     },
     {
         "firstName": "Malin",
         "lastName": "Nordin",
         "reservationCount": 3,
-        "firstOccurence": "2026-09-16T17:00:00",
+        "firstOccurence": "2026-09-16T17:00:00"
     },
     {
         "firstName": "Jesper",
         "lastName": "Stien",
         "reservationCount": 3,
-        "firstOccurence": "2026-09-22T06:30:00",
+        "firstOccurence": "2026-09-22T06:30:00"
     },
     {
         "firstName": "Jonas",
         "lastName": "Eriksson",
         "reservationCount": 3,
-        "firstOccurence": "2026-09-01T18:15:00",
+        "firstOccurence": "2026-09-01T18:15:00"
     },
     {
         "firstName": "Andreas",
         "lastName": "Jagelund",
         "reservationCount": 3,
-        "firstOccurence": "2026-09-10T06:30:00",
+        "firstOccurence": "2026-09-10T06:30:00"
     },
     {
         "firstName": "Klas",
         "lastName": "Tegnemyr",
         "reservationCount": 2,
-        "firstOccurence": "2026-09-19T10:00:00",
+        "firstOccurence": "2026-09-19T10:00:00"
     }
 ]
